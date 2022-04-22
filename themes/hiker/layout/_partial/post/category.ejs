@@ -1,0 +1,11 @@
+<% if (post.categories && post.categories.length){ %>
+    <% if (is_post()){ %>
+    <span style="color: #999">分类于</span>
+    <% } %>
+    <%- list_categories(post.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: ''
+    }) %><% if (is_post()){ %><span style="color: #999">|</span><% } %>
+<% } %>
