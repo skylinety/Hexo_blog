@@ -81,5 +81,5 @@ deploy:
   type: git
   repo:
     github: https://github.com/skylinety/skylinety.github.io.git
-    coding: git@git.coding.net:skylinelty/skylinelty.git
+    # coding: git@git.coding.net:skylinelty/skylinelty.git
   branch: master
