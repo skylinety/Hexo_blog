@@ -1,6 +1,6 @@
 ---
 title: Webpack中DllPlugin使用
-updated: 2022-05-27	15:41:02
+updated: 2022-06-02	10:55:08
 date: 2022-05-27	15:41:02
 tags: [JS,Packages,Webpack]
 categories: [Major]
@@ -129,7 +129,7 @@ manifest.json 文件包含了引用模块的 id 映射，为 DllReferencePlugin 
 ```
 
 ### 手动引入注意
-            <!--more-->
+<!--more-->
 
 如果前后端约定了项目访问 url 前缀，如'skyline',则前端可以在 output.publicPath 指定值为'/skyline/'
 同时手动引入是需为如下配置。

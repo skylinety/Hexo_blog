@@ -124,7 +124,7 @@ package.json
 ## Husky 配置更新
 
 ### git hooks 说明
-            <!--more-->
+<!--more-->
 
 要配置 Git 钩子，只需要简单地在.git/hooks/目录下放对应钩子的可执行文件即可
 ![Husky使用20210924152534](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Husky%E4%BD%BF%E7%94%A820210924152534.png)
@@ -218,10 +218,4 @@ I am a bucolic migrant worker but I never walk backwards.
 
 > 本文作者： Skyline(lty)
 > 版权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/Husky使用.html](http://www.skyline.show/Husky使用.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             

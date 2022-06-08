@@ -157,7 +157,7 @@ git config user.email
 ```
 
 ### 修改全局配置
-            <!--more-->
+<!--more-->
 
 ```shell
 git config --global user.name "username"

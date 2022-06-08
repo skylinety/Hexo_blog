@@ -15,6 +15,7 @@ categories: []
 <!-- code_chunk_output -->
 
 - [MacOS 基础使用](#macos-基础使用)
+  - [Macos Beta 系统更新开启](#macos-beta-系统更新开启)
   - [网络磁盘映射](#网络磁盘映射)
   - [剪切（移动）](#剪切移动)
     - [常规](#常规)
@@ -120,7 +121,7 @@ Successfully disabled System Integrity Protection. Please restart the machine fo
 按住 option 键，鼠标右击，查看菜单栏变化
 
 ### 其他方式
-            <!--more-->
+<!--more-->
 
 第一步：右键单击该文件，然后选择「显示简介」选项。
 第二步：找到「打开方式」项目，点击倒三角选择你想指定的默认应用程序。
@@ -144,10 +145,5 @@ Successfully disabled System Integrity Protection. Please restart the machine fo
 ### 设置程序打开快捷键
 
 ![Macos基本操作3B838E4C4D5B3D48BED0B7FB2AE51847](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Macos%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C3B838E4C4D5B3D48BED0B7FB2AE51847.jpg)
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/MacOS基本操作.html](http://www.skyline.show/MacOS基本操作.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
+
             

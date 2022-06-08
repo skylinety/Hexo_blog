@@ -118,7 +118,7 @@ skyline instanceof Person; // true
 ```
 
 ### 原型判定
-            <!--more-->
+<!--more-->
 
 调用构造函数创建一个新的实例之后，该实例内部包含一个指向构造函数原型对象的指针[[Prototype]]（内部属性）。多数浏览器实现了`__proto__`来获取[[Prototype]]内部属性
 
@@ -288,10 +288,4 @@ var me = Person("skyline");
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/ES对象创建.html](http://www.skyline.show/ES对象创建.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             

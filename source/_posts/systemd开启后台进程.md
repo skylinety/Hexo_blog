@@ -14,7 +14,7 @@ categories: []
 
 <!-- code_chunk_output -->
 
-- [利用 systemd 开启后台进程](#利用-systemd-开启后台进程)
+- [利用 Systemd 开启后台进程](#利用-systemd-开启后台进程)
   - [简介](#简介)
     - [创建新服务](#创建新服务)
     - [开启服务](#开启服务)
@@ -134,10 +134,4 @@ systemctl disable foo
 ```shell
 systemctl is-enabled foo
 ```
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/systemd开启后台进程.html](http://www.skyline.show/systemd开启后台进程.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             

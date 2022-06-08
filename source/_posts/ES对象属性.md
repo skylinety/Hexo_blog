@@ -21,20 +21,20 @@ categories: []
     - [Configurable](#configurable)
   - [属性创建](#属性创建)
     - [直接创建](#直接创建)
-    - [Object.defineProperty() & Object.defineProperties()](#objectdefineproperty-objectdefineproperties)
+    - [Object.defineProperty() & Object.defineProperties()](#objectdefineproperty--objectdefineproperties)
     - [Object.create](#objectcreate)
-  - [扩展、封印与冻结](#扩展-封印与冻结)
+  - [扩展、封印与冻结](#扩展封印与冻结)
     - [preventExtensions](#preventextensions)
     - [seal](#seal)
     - [freeze](#freeze)
-  - [屏蔽、检测与遍历](#屏蔽-检测与遍历)
+  - [屏蔽、检测与遍历](#屏蔽检测与遍历)
     - [属性屏蔽](#属性屏蔽)
     - [属性检测](#属性检测)
     - [属性遍历](#属性遍历)
   - [BMW WARNING](#bmw-warning)
     - [Bulletin](#bulletin)
     - [Material](#material)
-    - [Warrant](#Warrant)
+    - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
 
@@ -77,7 +77,7 @@ configurable true，writable false 时，可以通过 Object.defineProperty()修
 ## 属性创建
 
 ### 直接创建
-            <!--more-->
+<!--more-->
 
 直接建立的布尔型属性描述默认都是 true
 
@@ -226,10 +226,4 @@ I am a bucolic migrant worker but I never walk backwards.
 
 > 本文作者： Skyline(lty)
 > 版权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/ES对象属性.html](http://www.skyline.show/ES对象属性.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             

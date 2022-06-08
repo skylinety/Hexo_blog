@@ -1,40 +1,38 @@
 ---
 title: CentOS防火墙
-updated: 2022-01-20	15:47:16
+updated: 2022-06-02	11:35:11
 date: 2022-01-20	15:47:15
-tags: []
-categories: []
+tags: [OS,Linux]
+categories: [Tools]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# CentOS 防火墙
+
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [CentOS 防火墙](#centos-防火墙)
-  - [firewalld](#firewalld1)
-    - [Concepts](#concepts)
-    - [Zones](#zones)
-    - [Services](#services)
-    - [Runtime](#runtime)
-    - [State](#state)
-    - [Port](#port)
-    - [Source](#source)
-  - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+- [firewalld](#firewalld)
+  - [Concepts](#concepts)
+  - [Zones](#zones)
+  - [Services](#services)
+  - [Runtime](#runtime)
+  - [State](#state)
+  - [Port](#port)
+  - [Source](#source)
+- [BMW WARNING](#bmw-warning)
+  - [Bulletin](#bulletin)
+  - [Material](#material)
+  - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
 
-## firewalld[^1]
+## firewalld
 
 ### Concepts
 
-firewalld 采用区域与服务的概念来控制流量的出入。
+firewalld[^1] 采用区域与服务的概念来控制流量的出入。
 
 - zones
 - services
@@ -47,17 +45,18 @@ firewalld 是 CentOS 7/8, Red Hat Enterprise Linux 7 (RHEL 7), Fedora 18+等 Lin
 zones 预设级别不同的防火墙策略，用户可以自定义 zones，也可以使用预设的 zones。
 默认使用 public zone
 根据拦截级别严格程度，预设 zones 如下
-zone | 拦截说明
---- | ---
-drop | 丢弃区，所有接入连接都会进行无消息响应拦截，只有输出连接被允许。
-block | 拦截区，接入连接都会被拦截，会响应 icmp-host-prohibited 等拦截消息，只有输出连接被允许。
-public | 公共区，用于不受信任的公共区域，仅允许自选接入连接，默认允许 ssh 和 dhcpv6-client
-external | 外部区，用于外部网络，系统充当网关角色，仅允许自选接入连接，默认允许 ssh
-internal | 内部区，用于内部网络，系统充当网关角色，仅允许自选接入连接
-dmz | 隔离区，demilitarized zone（隔离区，军事缓冲区），用于允许部分服务被外网访问，仅允许自选接入连接
-work | 工作区，用于工作网络，信任网络中其他机器，仅允许自选接入连接，默认允许 ssh，ipp-client 和 dhcpv6-client
-home | 家庭区，用于工作家庭网络，信任网络中其他机器，仅允许自选接入连接，默认允许 ssh，ipp-client，mdns，samba-client 和 dhcpv6-client
-trusted | 信任区，并接受所有网络连接
+
+| zone     | 拦截说明                                                                                                                        |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| drop     | 丢弃区，所有接入连接都会进行无消息响应拦截，只有输出连接被允许。                                                                |
+| block    | 拦截区，接入连接都会被拦截，会响应 icmp-host-prohibited 等拦截消息，只有输出连接被允许。                                        |
+| public   | 公共区，用于不受信任的公共区域，仅允许自选接入连接，默认允许 ssh 和 dhcpv6-client                                               |
+| external | 外部区，用于外部网络，系统充当网关角色，仅允许自选接入连接，默认允许 ssh                                                        |
+| internal | 内部区，用于内部网络，系统充当网关角色，仅允许自选接入连接                                                                      |
+| dmz      | 隔离区，demilitarized zone（隔离区，军事缓冲区），用于允许部分服务被外网访问，仅允许自选接入连接                                |
+| work     | 工作区，用于工作网络，信任网络中其他机器，仅允许自选接入连接，默认允许 ssh，ipp-client 和 dhcpv6-client                         |
+| home     | 家庭区，用于工作家庭网络，信任网络中其他机器，仅允许自选接入连接，默认允许 ssh，ipp-client，mdns，samba-client 和 dhcpv6-client |
+| trusted  | 信任区，并接受所有网络连接                                                                                                      |
 
 - 新建防火墙区域策略
 
@@ -180,7 +179,7 @@ sudo cp /usr/lib/firewalld/services/ssh.xml /etc/firewalld/services/diyservice.x
 重启防火墙后就可以看到该服务。
 
 ### Runtime
-            <!--more-->
+<!--more-->
 
 Firewalld 提供运行时与永久两种配置有效期限。
 
@@ -390,10 +389,3 @@ sudo firewall-cmd --zone=external --add-forward-port=port=80:proto=tcp:toaddr=10
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/CentOS防火墙.html](http://www.skyline.show/CentOS防火墙.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
-            

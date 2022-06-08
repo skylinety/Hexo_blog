@@ -135,7 +135,7 @@ b.$mount()
 ## mixin
 
 ### 混入规则
-            <!--more-->
+<!--more-->
 
 - data 在混入时会进行递归合并，如果两个属性发生冲突，则以组件自身为主
 - 生命周期钩子函数 混入时会将同名钩子函数加入到一个**数组**中，会先按照数组顺序依次执行执行混入对象的同名钩子函数，再执行本组件的。
@@ -480,10 +480,5 @@ const Demo = {
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/Vue基础使用.html](http://www.skyline.show/Vue基础使用.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
+
             

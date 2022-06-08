@@ -62,7 +62,7 @@ categories: []
 :set number 显示行索引
 
 ### 可视模式 (Visual-mode)
-            <!--more-->
+<!--more-->
 
 在正常模式按下 v, V, ^ + v，可以进入可视模式
 可视模式下执行文本选择操作。
@@ -77,10 +77,4 @@ categories: []
 inoremap zz
 
 ```
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/VIM基本使用.html](http://www.skyline.show/VIM基本使用.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             

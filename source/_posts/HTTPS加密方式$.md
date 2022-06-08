@@ -20,7 +20,7 @@ categories: []
 超文本传输安全协议（（HyperText Transfer Protocol Secure）也被称为HTTP over TLS，HTTP over SSL）
 HTTPS开发是为了解决上述风险，提供对网络服务器的认证，保证交换信息的机密性和完整性，在HTTP的基础上，我们需要进一步做信息传输加密，数据完整校验，身份认证等工作。
 #### 与HTTP对比
-            <!--more-->
+<!--more-->
 * 端口：HTTPS 443，HTTP 80
 * 传输： HTTPS密文， HTTP 明文
 * 证书：HTTPS需要，HTTP 不需要

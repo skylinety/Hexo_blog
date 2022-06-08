@@ -64,7 +64,7 @@ categories: []
 ## BMW WARNING
 
 ### Bulletin
-            <!--more-->
+<!--more-->
 
 本文首发于 [skyline.show](skyline.show) 欢迎访问。
 
@@ -82,10 +82,4 @@ categories: []
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/IpadOS常见问题.html](http://www.skyline.show/IpadOS常见问题.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             

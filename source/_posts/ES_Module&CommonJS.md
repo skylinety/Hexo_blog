@@ -225,7 +225,7 @@ commonJS 规范用同步的方式加载模块.
 > I am a bucolic migrant worker but I never walk backwards.
 
 ### Material
-            <!--more-->
+<!--more-->
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 

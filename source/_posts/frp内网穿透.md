@@ -105,7 +105,7 @@ systemctl enable frp
 
 ## Client 端
 ### frpc配置
-            <!--more-->
+<!--more-->
 本文Client 端此处采用 Docker 方式。
 将下载的 frpc.ini 放在 Docker 宿主机本地
 ![20220117194957](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/20220117194957.png)
@@ -152,9 +152,4 @@ https://hub.docker.com/r/chenhw2/frp
 在外网环境在浏览器输入 42.113.1.102:5000
 来到群晖登录页即穿透成功。
 ![frp内网穿透20220118112743](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F20220118112743.png)            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/frp内网穿透.html](http://www.skyline.show/frp内网穿透.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             

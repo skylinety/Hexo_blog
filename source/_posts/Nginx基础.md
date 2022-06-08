@@ -22,7 +22,7 @@ categories: []
   - [proxy_pass](#proxy_pass)
     - [简述](#简述)
     - [URI](#uri)
-    - [/ 问题](#问题)
+    - [/ 问题](#-问题)
     - [\$uri \$request_uri](#uri-request_uri)
   - [BMW WARNING](#bmw-warning)
     - [Bulletin](#bulletin)
@@ -103,7 +103,7 @@ http://domain2.com/file/1 根据优先级命中`^~ /file/`
 ## proxy_pass
 
 ### 简述
-            <!--more-->
+<!--more-->
 
 proxy_pass 通常位于 location 下，用于接口转发。
 
@@ -209,10 +209,5 @@ location 正则匹配保留 Request 原始 URI
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/Nginx基础.html](http://www.skyline.show/Nginx基础.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
+
             

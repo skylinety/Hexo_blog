@@ -89,9 +89,3 @@ https://txthinking.github.io/brook/#/install-gui-client
 下载后连接成功如下图所示：
 ![Brook服务搭建与访问20220118111315](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Brook%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA%E4%B8%8E%E8%AE%BF%E9%97%AE20220118111315.png)
             
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/Brook服务搭建与访问.html](http://www.skyline.show/Brook服务搭建与访问.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
-            

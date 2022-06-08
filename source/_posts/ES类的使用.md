@@ -15,7 +15,7 @@ categories: []
 <!-- code_chunk_output -->
 
 - [ES 类的使用](#es-类的使用)
-  - [静态（类）、实例、原型属性与方法](#静态类-实例-原型属性与方法)
+  - [静态（类）、实例、原型属性与方法](#静态类实例原型属性与方法)
     - [ES5](#es5)
     - [ES6](#es6)
     - [属性访问结论](#属性访问结论)
@@ -25,7 +25,7 @@ categories: []
   - [BMW WARNING](#bmw-warning)
     - [Bulletin](#bulletin)
     - [Material](#material)
-    - [Warrant](#Warrant)
+    - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
 
@@ -184,7 +184,7 @@ Baby.age = 1;
 ## Class
 
 ### 原型方法语法糖
-            <!--more-->
+<!--more-->
 
 对于 ES6 的 Baby 类的 toString
 
@@ -246,10 +246,4 @@ Object.keys(skyline.__proto__);
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            
-            &nbsp;
-            
-            > 本文作者： Skyline(lty)
-            文章链接： [http://www.skyline.show/ES类的使用.html](http://www.skyline.show/ES类的使用.html)
-            版权声明： 部分图片源自网络，并已在图片下方标明，由于转载等诸多因素，图源可能不准确，侵删。本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 3.0 许可协议](https://creativecommons.org/licenses/by-nc-sa/3.0/)。转载请注明出处！
             
