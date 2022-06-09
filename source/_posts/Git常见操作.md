@@ -1,19 +1,17 @@
 ---
 title: Git常见操作
-updated: 2022-06-01	15:38:26
+updated: 2022-06-03	17:41:57
 date: 2022-05-27	15:41:03
 tags: [DEVs,Git]
 categories: [Tools]
 ---
             
             
-# Git 常见操作
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Git 常见操作](#git-常见操作)
   - [git 单列已添加到暂存区的文件](#git-单列已添加到暂存区的文件)
   - [Git 本地分支有提交，单独查看并运行远程该分支](#git-本地分支有提交单独查看并运行远程该分支)
   - [新建仓库时关联远程与本地](#新建仓库时关联远程与本地)
@@ -34,7 +32,7 @@ categories: [Tools]
 通过`git status`命令可以列出所有增删改的文件，并做了是否添加跟踪，是否加入暂存区的区分。
 若只看加入暂存区的文件，使用
 
-```shell
+```sh
 git diff --name-only --cached
 ```
 ![Git常见操作20220602161840](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Git%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C20220602161840.png)
@@ -97,7 +95,7 @@ git push -u origin master
 
 ### git remote add
 
-```shell
+```sh
 git remote add origingit <https://git.citycloud.com.cn:3000/hcsg_code/xxxx.git>
 ```
 
@@ -111,14 +109,14 @@ git remote add origingit <https://git.citycloud.com.cn:3000/hcsg_code/xxxx.git>
 
 本方案存在一个弊端，需要向远端仓库分别提交代码
 
-```shell
+```sh
 git  push origin master:master
 git  push origingit master:master
 ```
 
 ### git remote set-url
 
-```shell
+```sh
 git remote set-url --add origin <https://git.citycloud.com.cn:3000/hcsg_code/xxxx.git
 ```
 
@@ -159,7 +157,7 @@ git config user.email
 ### 修改全局配置
 <!--more-->
 
-```shell
+```sh
 git config --global user.name "username"
 
 git config --global user.email "email"

@@ -1,20 +1,17 @@
 ---
 title: ES对象创建
-updated: 2022-01-20	15:47:16
+updated: 2022-06-03	17:39:33
 date: 2022-01-20	15:47:16
-tags: []
-categories: []
+tags: [JS,ES,复杂类型]
+categories: [Major]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# JS 对象的创建
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [JS 对象的创建](#js-对象的创建)
   - [工厂模式](#工厂模式)
   - [构造函数模式](#构造函数模式)
     - [实现](#实现)
@@ -272,7 +269,7 @@ var me = Person("skyline");
 
 ### Bulletin
 
-本文首发于 [skyline.show](skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
@@ -288,4 +285,3 @@ var me = Person("skyline");
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            

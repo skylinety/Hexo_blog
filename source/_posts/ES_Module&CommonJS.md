@@ -1,19 +1,17 @@
 ---
 title: ES_Module&CommonJS
-updated: 2022-05-27	18:09:13
+updated: 2022-06-03	17:39:33
 date: 2022-05-27	15:41:02
 tags: [JS,ES]
 categories: [Major]
 ---
             
             
-# ES Module vs CommonJS
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [ES Module vs CommonJS](#es-module-vs-commonjs)
   - [模块系统](#模块系统)
   - [ESM VS CJS](#esm-vs-cjs)
   - [ESM VS CJS 要点解析](#esm-vs-cjs-要点解析)
@@ -220,7 +218,7 @@ commonJS 规范用同步的方式加载模块.
 
 ### Bulletin
 
-本文首发于 [skyline.show](skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 

@@ -1,19 +1,17 @@
 ---
 title: Shell中的符号
-updated: 2022-05-27	15:41:03
+updated: 2022-06-03	17:41:57
 date: 2022-05-27	15:41:03
 tags: [Shell]
 categories: [Major]
 ---
             
             
-# Shell 中的符号
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Shell 中的符号](#shell-中的符号)
   - [路径符](#路径符)
   - [重定向符](#重定向符)
   - [命令执行符](#命令执行符)
@@ -59,13 +57,13 @@ Shell 中包含输入与输出重定向相关的符号，如下表所示
 command > file 将 command 的输出重定向到 file
 常见用法
 
-```shell
+```sh
 echo Hello > test.txt
 ```
 
 上述命令控制台不会有任何输出，Hello 文本将直接覆盖写入 test.txt
 
-```shell
+```sh
 2>&1
 ```
 
@@ -84,7 +82,7 @@ echo Hello > test.txt
 
 输入重定向
 
-```shell
+```sh
 command < file
 ```
 
@@ -103,32 +101,32 @@ command < file
 
 shell 中!叫做事件提示符，可以方便的引用历史命令，当!  后面跟随的字母不是“空格、换行、回车、=和(”时，可以做命令替换
 
-```shell
+```sh
 !n
 ```
 
 替换命令历史中第 n 个命令
 
-```shell
+```sh
 !-n
 ```
 
 替换命令历史中倒数第 n 个命令
 
-```shell
+```sh
 !!
 ```
 
 即!-1
 
-```shell
+```sh
 !string
 ```
 
 引用最近的以 string  开始的命令
 注意一定是开始的位置,这条命令在你运行一个命令之后忘记了这个命令的参数是什么，直接!命令既可 ​​
 
-```shell
+```sh
 !?string?
 ```
 
@@ -138,7 +136,7 @@ shell 中!叫做事件提示符，可以方便的引用历史命令，当!  后
 
 所有命令同时进行
 
-```shell
+```sh
 command1 & command2 & command3
 ```
 
@@ -147,7 +145,7 @@ command1 & command2 & command3
 命令依次执行
 只有前面命令执行成功，后面命令才继续执行
 
-```shell
+```sh
 command1 && command2
 ```
 
@@ -156,7 +154,7 @@ command1 && command2
 命令依次执行
 前面命令执行不管成功否，后面命令继续执行
 
-```shell
+```sh
 command1; command2; command3
 ```
 
@@ -177,14 +175,14 @@ command1; command2; command3
 
 - ?
 
-```shell
+```sh
 ls ?.js
 # 会列出a.js,b.js，不会列出ab.js
 ```
 
 - \*
 
-```shell
+```sh
 ls *.js
 # 会列出当前目录下所有.js后缀文件
 ```
@@ -194,7 +192,7 @@ ls *.js
 将开始标记 tag 和结束标记 tag 之间的内容作为输入。
 标记常指定为 EOF 即（End Of File)，也可指定其他字符。此符号常与 cat 一起使用
 
-```shell
+```sh
     cat <<EOF >> b.js
 ```
 
@@ -206,7 +204,7 @@ ls *.js
 \#常用于注释，其他用法包括
 为剔除字符中的由头部开始指定字符
 
-```shell
+```sh
 skyline='Skyline Liu!';
 echo How-To ${skyline#Skyline}
 # echo How-To ${skyline#Liu} 不会剔除Liu字符，不生效
@@ -216,7 +214,7 @@ echo How-To ${skyline#Skyline}
 
 获取字符或数组的长度
 
-```shell
+```sh
 dir='/a/b/c'
 echo ${#dir}
 # 6

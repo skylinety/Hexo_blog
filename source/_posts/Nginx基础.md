@@ -1,20 +1,17 @@
 ---
 title: Nginx基础
-updated: 2022-01-20	15:47:15
+updated: 2022-06-03	17:41:57
 date: 2022-01-20	15:47:15
-tags: []
-categories: []
+tags: [DEVs,Nginx]
+categories: [Tools]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# Nginx 基础
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Nginx 基础](#nginx-基础)
   - [location](#location)
     - [基础使用](#基础使用)
     - [URL-match](#url-match)
@@ -22,7 +19,7 @@ categories: []
   - [proxy_pass](#proxy_pass)
     - [简述](#简述)
     - [URI](#uri)
-    - [/ 问题](#-问题)
+    - [/ 问题](#问题)
     - [\$uri \$request_uri](#uri-request_uri)
   - [BMW WARNING](#bmw-warning)
     - [Bulletin](#bulletin)
@@ -47,7 +44,7 @@ location [modifier] [URL-match] {
 
 匹配所有路径
 
-```shell
+```sh
 location / {
 }
 ```
@@ -77,7 +74,7 @@ URI 这里指 URL 除了 server:port 的部分。
 
 示例 1
 
-```shell
+```sh
 location ^~ /file/* {
     proxy_pass http://bbb.com/;
 }
@@ -89,7 +86,7 @@ http://domain2.com/file/1 不能命中
 
 示例 2
 
-```shell
+```sh
 location ~ /file/* {
     proxy_pass http://bbb.com/;
 }
@@ -114,7 +111,7 @@ location 非正则匹配时，对于 proxy_pass 有如下规则：
 proxy_pass 有 URI
 替换请求中匹配的 URI 并替换成 proxy_pass 中的 URI 并向上游服务转发。
 
-```shell
+```sh
 location /file {
     proxy_pass http://bbb.com/src;
 }
@@ -122,7 +119,7 @@ location /file {
 
 http://aaa.com/file/search 真实访问地址为http://bbb.com/src/search
 
-```shell
+```sh
 location /file {
     proxy_pass http://bbb.com/;
 }
@@ -133,7 +130,7 @@ http://aaa.com/file/search 真实访问地址为http://bbb.com//search
 proxy_pass 无 URI
 保留请求 URI 并将其转发到上游服务
 
-```shell
+```sh
 location /file {
     proxy_pass http://bbb.com;
 }
@@ -144,7 +141,7 @@ http://aaa.com/file/search 真实访问地址为http://bbb.com/file/search
 location 为正则匹配时，由于 nginx 不知道替换哪些字符，
 proxy_pass 的 URI 不起作用，保留原 URI，转发到上上游服务
 
-```shell
+```sh
 location ~ /file {
     proxy_pass http://bbb.com/src;
 }
@@ -193,7 +190,7 @@ location 正则匹配保留 Request 原始 URI
 
 ### Bulletin
 
-本文首发于 [skyline.show](skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
@@ -209,5 +206,3 @@ location 正则匹配保留 Request 原始 URI
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-
-            

@@ -1,20 +1,17 @@
 ---
 title: MacOS基本操作
-updated: 2022-01-20	15:47:15
+updated: 2022-06-03	17:52:11
 date: 2022-01-20	15:47:15
-tags: []
-categories: []
+tags: [OS,MacOS]
+categories: [Tools]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# MacOS 基础使用
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [MacOS 基础使用](#macos-基础使用)
   - [Macos Beta 系统更新开启](#macos-beta-系统更新开启)
   - [网络磁盘映射](#网络磁盘映射)
   - [剪切（移动）](#剪切移动)
@@ -50,7 +47,7 @@ https://beta.apple.com
 一般有 Samba 或 AFP 等方式共享服务
 常见地址如下
 
-```shell
+```sh
 afp://192.168.2.20
 smb://192.168.2.20
 ```
@@ -67,7 +64,7 @@ smb://192.168.2.20
 
 ### 快捷键
 
-```shell
+```sh
 ⌘ + c
 ⌘ + ⌥ + v
 ```
@@ -145,5 +142,3 @@ Successfully disabled System Integrity Protection. Please restart the machine fo
 ### 设置程序打开快捷键
 
 ![Macos基本操作3B838E4C4D5B3D48BED0B7FB2AE51847](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Macos%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C3B838E4C4D5B3D48BED0B7FB2AE51847.jpg)
-
-            

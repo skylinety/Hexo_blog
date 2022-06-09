@@ -1,20 +1,21 @@
 ---
 title: Vue基础使用
-updated: 2022-01-20	15:47:16
+updated: 2022-06-03	17:41:56
 date: 2022-01-20	15:47:16
-tags: []
-categories: []
+tags: [JS,Vue]
+categories: [Major]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# Vue 基础使用
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Vue 基础使用](#vue-基础使用)
+  - [transition](#transition)
+    - [基本使用](#基本使用)
+    - [使用限制](#使用限制)
+  - [设定元素背景](#设定元素背景)
   - [Vue Router model](#vue-router-model)
   - [img 图片错误默认处理](#img-图片错误默认处理)
   - [extend](#extend)
@@ -48,6 +49,85 @@ categories: []
 
 <!-- /code_chunk_output -->
 
+## transition
+
+### 基本使用
+
+将 transition name 命名后书写对应的类来自动生成的对应的类
+
+```html
+<transition name="fade">
+  <p v-if="show">hello</p>
+</transition>
+
+<style>
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: width 3s, opacity 1s;
+    width: 100%;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    width: 0;
+    display: none;
+    opacity: 0;
+  }
+</style>
+```
+
+### 使用限制
+
+transition 仅限用于如下组件上
+
+- 条件渲染 (使用 v-if)
+- 条件展示 (使用 v-show)
+- 动态组件
+- 组件根节点
+
+对于 v-for 使用不会有任何效果， 需要改为使用 `<transition-group>`
+`<transition-group>` 元素作为多个元素/组件的过渡效果
+
+```html
+<transition-group name="fade" tag="div">
+  <div v-for="(item, index) in sources" :key="index">
+    <p>{{item.skyline}}</p>
+  </div>
+</transition-group>
+```
+
+当使用 v-for 并对 key 值进行 index 绑定，会出现如下警告
+
+> Do not use v-for index as key on `<transition-group>` children, this is the same as not using keys.
+
+处理方式如下：
+
+```js
+:key="index + 0"
+//或使用 :key="item"
+
+```
+
+## 设定元素背景
+
+在 Vue 文件中，设定元素的样式可在 CSS 中或 使用JS对象进行。
+涉及到背景时，如下所示：
+CSS
+
+```css
+background-image: url('~@/assets/imgs/img_bg.png');
+```
+
+JS
+
+```js
+:style="{
+  width: '100%',
+  height: '100%',
+  backgroundImage: 'url(' + require('@/assets/imgs/img_bg.jpg') + ')'
+  // background: `center no-repeat url('@/assets/imgs/img_bg.jpg') ` //或使用此方式，注意url中的引号
+}"
+```
+
 ## Vue Router model
 
 Vue 有两种路由模式:
@@ -75,7 +155,7 @@ History 模式通过 history.pushState 防止路由重载。
 若不进行配置，刷新页面会报错。
 Nginx 配置如下
 
-```shell
+```sh
 location / {
   try_files $uri $uri/ /index.html;
 }
@@ -115,6 +195,7 @@ html 原生是 οnerrοr 来监听图片渲染错误事件
 ### 获取.vue 组件的构造函数
 
 ### 使用示例
+<!--more-->
 
 Vue.extend
 
@@ -135,7 +216,6 @@ b.$mount()
 ## mixin
 
 ### 混入规则
-<!--more-->
 
 - data 在混入时会进行递归合并，如果两个属性发生冲突，则以组件自身为主
 - 生命周期钩子函数 混入时会将同名钩子函数加入到一个**数组**中，会先按照数组顺序依次执行执行混入对象的同名钩子函数，再执行本组件的。
@@ -464,7 +544,7 @@ const Demo = {
 
 ### Bulletin
 
-本文首发于 [skyline.show](skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
@@ -480,5 +560,3 @@ const Demo = {
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-
-            

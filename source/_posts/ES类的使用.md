@@ -1,21 +1,18 @@
 ---
 title: ES类的使用
-updated: 2022-01-20	15:47:16
+updated: 2022-06-03	17:39:33
 date: 2022-01-20	15:47:16
-tags: []
-categories: []
+tags: [JS,ES,复杂类型]
+categories: [Major]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# ES 类的使用
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [ES 类的使用](#es-类的使用)
-  - [静态（类）、实例、原型属性与方法](#静态类实例原型属性与方法)
+  - [静态（类）、实例、原型属性与方法](#静态类-实例-原型属性与方法)
     - [ES5](#es5)
     - [ES6](#es6)
     - [属性访问结论](#属性访问结论)
@@ -25,7 +22,7 @@ categories: []
   - [BMW WARNING](#bmw-warning)
     - [Bulletin](#bulletin)
     - [Material](#material)
-    - [Warrant](#warrant)
+    - [Warrant](#Warrant)
 
 <!-- /code_chunk_output -->
 
@@ -230,7 +227,7 @@ Object.keys(skyline.__proto__);
 
 ### Bulletin
 
-本文首发于 [skyline.show](skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
@@ -246,4 +243,3 @@ Object.keys(skyline.__proto__);
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            

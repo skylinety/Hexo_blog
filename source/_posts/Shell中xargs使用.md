@@ -1,19 +1,17 @@
 ---
 title: Shell中xargs使用
-updated: 2022-05-27	16:06:40
+updated: 2022-06-03	17:41:56
 date: 2022-05-27	16:06:40
 tags: [Shell,Commands]
 categories: [Major]
 ---
             
             
-# Shell 中 xargs 使用
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Shell 中 xargs 使用](#shell-中-xargs-使用)
   - [概述](#概述)
   - [基础使用示例](#基础使用示例)
     - [echo](#echo)
@@ -151,7 +149,7 @@ ls
 
 将当前目录下文件统一加后缀
 
-```shell
+```sh
 # input
 ls
 # output
@@ -173,7 +171,7 @@ number 类型，解决多行输入问题，将标准输入按照该数字指定�
 执行多次，直到多行执行结束。
 多数命令不支持多行参数，通常直接指定 -L1
 
-```shell
+```sh
 # input
 echo -e "She*\nFlu*" | xargs -L 1 find  . -name
 # output
@@ -192,7 +190,7 @@ echo -e "She*\nFlu*" | xargs -L 1 find  . -name
 
 number 类型，解决同行多项参数问题。与-L 参数互斥，同时指定选后指定的选项。
 
-```shell
+```sh
 # input
 echo -e "She* Flu*" | xargs -n 1 find . -name
 # output

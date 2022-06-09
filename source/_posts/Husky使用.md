@@ -1,14 +1,32 @@
 ---
 title: Husky使用
-updated: 2022-01-20	15:47:16
-date: 2022-01-20	15:47:16
-tags: []
-categories: []
+updated: 2022-06-03	17:49:53
+
+tags: [JS,Packages]
+categories: [Major]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# Husky 使用
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+  - [Husky 使用配置](#husky-使用配置)
+    - [husky 简述](#husky-简述)
+    - [V5+](#v5)
+    - [V4](#v4)
+  - [Husky 配置更新](#husky-配置更新)
+    - [git hooks 说明](#git-hooks-说明)
+    - [V4 工作原理](#v4-工作原理)
+    - [V5+ 原理](#v5-原理)
+    - [后续问题](#后续问题)
+  - [BMW WARNING](#bmw-warning)
+    - [Bulletin](#bulletin)
+    - [Material](#material)
+    - [Warrant](#warrant)
+
+<!-- /code_chunk_output -->
 
 ## Husky 使用配置
 
@@ -136,7 +154,7 @@ package.json
 在 V4 版本及以前，为了可执行 .huskyrc.js 中配置的钩子， 在装 Husky 的时候，默认初始化了全部钩子在.git/hooks/ 中。
 例如，在执行 commit 时 ， husky/runner.js 会去检查 .huskyrc.js 中是否有对应的配置
 
-```shell
+```sh
 $ git commit
 
 pre-commit (native) → husky/runner.js (node)
@@ -218,4 +236,3 @@ I am a bucolic migrant worker but I never walk backwards.
 
 > 本文作者： Skyline(lty)
 > 版权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
-            
