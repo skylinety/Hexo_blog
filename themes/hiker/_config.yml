@@ -80,7 +80,7 @@ widgets:
 # Flickr: 
 social:
   Github: https://github.com/skylinety
-  Weibo: https://weibo.com/p/1005056266485486
+  # Weibo: https://weibo.com/p/1005056266485486
   qq: https://user.qzone.qq.com/626660911/main
   email: skylinety@icloud.com
 
@@ -156,7 +156,7 @@ cnzz_siteid: 1260716016
 
 # busuanzi count
 # http://busuanzi.ibruce.info/
-show_busuanzi_view_counts: true
+show_busuanzi_view_counts: false
 
 
 # donation button

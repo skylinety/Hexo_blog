@@ -144,8 +144,6 @@
   p, table
     line-height: line-height
     margin: line-height 0
-  p
-    text-indent: 2em
   strong
     color: #f00
   h1, h2, h3, h4, h5, h6
@@ -163,17 +161,25 @@
   ul, ol, dl
     margin-top: line-height
     margin-bottom: line-height
+  >ul:nth-of-type(1)
+    color: color-link
+  ul
+    li::marker
+      content: ''
+    li:before
+      content: '✪';
+      padding-right: 6px;
   img, video
     max-width: 100%
     height: auto
     display: block
-    margin: auto
   iframe
     border: none
   table
     width: 100%
     border-collapse: collapse
     border-spacing: 0
+    background: #fff
   th
     font-weight: bold
     border-bottom: 3px solid color-border
