@@ -1,6 +1,6 @@
 ---
 title: Shadowsocks服务搭建与访问
-updated: 2022-06-03	17:41:57
+updated: 2022-06-21	18:02:05
 date: 2022-01-20	15:47:16
 tags: [APPs,VPN]
 categories: [Tools]
@@ -65,6 +65,7 @@ sudo pip install shadowsocks
 ```
 
 ### 配置文件
+<!--more-->
 
 新增配置文件
 `/etc/shadowsocks.json`
@@ -114,7 +115,6 @@ sudo ssserver -d stop
 ```
 
 ### 开机启动
-<!--more-->
 
 ```sh
 vi /etc/rc.local
@@ -230,19 +230,19 @@ grep后接自己暴露的端口前缀。
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

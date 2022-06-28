@@ -1,20 +1,17 @@
 ---
 title: Nginx常见问题汇总
-updated: 2022-01-20	15:47:15
+updated: 2022-06-21	18:02:05
 date: 2022-01-20	15:47:15
-tags: []
-categories: []
+tags: [DEVs,Nginx]
+categories: [Tools]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# Nginx 常见问题汇总
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Nginx 常见问题汇总](#nginx-常见问题汇总)
   - [proxy_pass 代理接口不能访问](#proxy_pass-代理接口不能访问)
     - [问题描述](#问题描述)
     - [配置](#配置)
@@ -37,10 +34,11 @@ http://aaa.com/file/123.png
 http://bbb.com/123.png
 
 ### 配置
+<!--more-->
 
 检查配置，正确的配置如下
 
-```shell
+```sh
 location ^~ /file/ {
     proxy_pass http://bbb.com/;
 }
@@ -60,7 +58,7 @@ vue 默认的是 hash 路由模式，使用此种模式，页面路由变化时�
 `try_files $uri $uri/ /index.html;`
 一般如下配置
 
-```shell
+```sh
 location ^~ /skyline{
     alias /data/wwwroot/skyline/dist;
     index  index.html index.htm;
@@ -70,23 +68,21 @@ location ^~ /skyline{
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
-本文首发于 [skyline.show](skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
-<!--more-->
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-            

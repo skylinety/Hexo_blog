@@ -1,6 +1,6 @@
 ---
 title: Interface与AbstractClass
-updated: 2022-06-03	17:39:33
+updated: 2022-06-21	18:02:03
 date: 2022-06-03	17:39:33
 tags: [JS,TS]
 categories: [Major]
@@ -59,6 +59,7 @@ var a = new Base() // Cannot create an instance of an abstract class.(
 虚拟方法的主要职责是为其派生的实体类提供蓝图，后续实体类需要实现的方法与属性提供参考（需要实现其中定义的虚拟方法属性等）。
 
 ## 综述
+<!--more-->
 
 | type           | 继承数                       | 使用时机 | 可否拥有实体方法 | 主要职责 |
 | -------------- | ---------------------------- | -------- | ---------------- | -------- |
@@ -94,19 +95,19 @@ if (x instanceof Base) { // OK
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

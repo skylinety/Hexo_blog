@@ -1,7 +1,7 @@
 ---
 title: Shell中的符号
-updated: 2022-06-03	17:41:57
-date: 2022-05-27	15:41:03
+updated: 2022-06-21	18:02:04
+date: 2021-05-27	15:41:03
 tags: [Shell]
 categories: [Major]
 ---
@@ -12,6 +12,7 @@ categories: [Major]
 
 <!-- code_chunk_output -->
 
+  - [引号](#引号)
   - [路径符](#路径符)
   - [重定向符](#重定向符)
   - [命令执行符](#命令执行符)
@@ -22,6 +23,22 @@ categories: [Major]
     - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
+
+## 引号
+
+单引号和双引号主要可用于解决字符串中间有空格的问题。
+单引号将剥夺字符串中特殊字符的含义。
+双引号中的'$'进行参数替换'`'进行命令替换。
+反引号与$()是一样的。 ``或者$()会将其中的语句当作命令执行一遍，再将结果充当原命令行一部分。
+
+```sh
+skyline=1
+echo '$skyline`echo 1`'
+# $skyline`echo 1`
+echo "$skyline`echo 1`"
+# 11
+
+```
 
 ## 路径符
 
@@ -35,6 +52,7 @@ Shell 中路径相关的符号，如下表所示
 | /    | cd /  | 根目录或路径分隔符 |
 
 ## 重定向符
+<!--more-->
 
 - 重定向符表
 
@@ -225,15 +243,15 @@ echo ${#arr}
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 > [Shell 输入/输出重定向](https://www.runoob.com/linux/linux-shell-io-redirections.html)
 
-### Warrant
+- Warrant
 
 > 本文作者： Skyline(lty)
 > 版权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

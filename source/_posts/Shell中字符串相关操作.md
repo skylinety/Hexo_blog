@@ -1,7 +1,7 @@
 ---
 title: Shell中字符串相关操作
-updated: 2022-06-03	17:41:57
-
+updated: 2022-06-21	18:02:04
+date: 2021-05-27	16:06:40
 tags: [Shell,Scripts]
 categories: [Major]
 ---
@@ -40,6 +40,7 @@ fi
 ```
 
 ### grep
+<!--more-->
 
 使用 grep
 
@@ -97,7 +98,6 @@ echo "skyline" | cut -d'i' -f1-
 ```
 
 ### 截取语法
-<!--more-->
 
 基本语法
 
@@ -126,19 +126,19 @@ echo ${a:2:4}
 ```
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >   
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

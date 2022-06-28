@@ -1,6 +1,6 @@
 ---
 title: UML类图画图图解
-updated: 2022-06-03	17:39:32
+updated: 2022-06-21	18:02:00
 date: 2022-06-03	17:39:32
 tags: [CS,DesignPatterns]
 categories: [Major]
@@ -37,6 +37,7 @@ categories: [Major]
 ## Object
 
 ### Classes
+<!--more-->
 
 在面向对象编程语言中，常使用 UML 画对象关系图。
 Class 图包含三个部分(三行)
@@ -67,7 +68,6 @@ Abstract Classes 与 Interface 类似，只需在第一层类名头部加上 `<<
 ## Relations
 
 ### Dependency
-<!--more-->
 
 依赖关系
 是一种弱关联关系。
@@ -130,19 +130,19 @@ Abstract Classes 与 Interface 类似，只需在第一层类名头部加上 `<<
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > http://www.cs.utsa.edu/~cs3443/uml/uml.html
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

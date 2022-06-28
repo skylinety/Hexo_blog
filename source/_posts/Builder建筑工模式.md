@@ -1,6 +1,6 @@
 ---
 title: Builder建筑工模式
-updated: 2022-06-03	17:39:32
+updated: 2022-06-21	18:02:00
 date: 2022-06-03	17:39:32
 tags: [CS,DesignPatterns,Creational]
 categories: [Major]
@@ -39,6 +39,7 @@ House.setDoors(1).setRooms(2).getHouse();
 ## 实例
 
 ### 修房子
+<!--more-->
 
 现在有一个基础房屋类如下所示
 
@@ -449,20 +450,19 @@ console.log("director.ts第214行:::medium diamond house", m);
 
 ## BMW WARNING
 
-### Bulletin
-<!--more-->
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > https://refactoring.guru/design-patterns/builder > https://refactoring.guru/design-patterns/builder/typescript/example
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

@@ -1,7 +1,7 @@
 ---
 title: Webpack中DllPlugin使用
-updated: 2022-06-03	17:39:33
-date: 2022-05-27	15:41:02
+updated: 2022-06-21	18:02:03
+date: 2021-05-27	15:41:02
 tags: [JS,Packages,Webpack]
 categories: [Major]
 ---
@@ -41,6 +41,7 @@ DLL即动态链接库(Dynamic Link Library)。
 > webpack v2 时已存在，在 v4+已不推荐使用该配置，新其版本迭代带来的性能提升足以忽略 DllPlugin 所带来的打包优化效益
 
 ### DllPlugin 配置
+<!--more-->
 
 webpack.dll.config.js 配置
 
@@ -127,7 +128,6 @@ manifest.json 文件包含了引用模块的 id 映射，为 DllReferencePlugin 
 ```
 
 ### 手动引入注意
-<!--more-->
 
 如果前后端约定了项目访问 url 前缀，如'skyline',则前端可以在 output.publicPath 指定值为'/skyline/'
 同时手动引入是需为如下配置。
@@ -202,19 +202,19 @@ plugins: [
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > [DllPlugin](https://webpack.js.org/plugins/dll-plugin) > [webpack 进阶——DllPlugin 优化打包性能（基于 vue-cli）](https://juejin.im/entry/598bcbc76fb9a03c5754d211)
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

@@ -1,6 +1,6 @@
 ---
 title: Cookie、Session与Token
-updated: 2022-06-03	17:39:32
+updated: 2022-06-21	18:02:01
 date: 2022-06-03	17:39:32
 tags: [CS,Network]
 categories: [Major]
@@ -35,6 +35,7 @@ Cookie Session 等技术诞生就是为了解决请求信息无法保存的问�
 ## Cookie
 
 ### 概述
+<!--more-->
 
 当服务端请求响应头包含 Set-Cookie 属性时，Set-Cookie 对应的信息会自动保存在浏览器中。
 在下次会话请求中，符合条件的请求会自动在请求头中设置 Cookie 属性，并携带之前保存的信息。
@@ -103,7 +104,6 @@ SameSite 一般直接使用默认值 Lax，防止第三方网站直接发送本�
 由于隐私与安全等缘故，部分浏览器默认禁止了三方 Cookie
 
 ### Cookie 前缀
-<!--more-->
 
 由于 Cookie 设计机制问题，服务器并不能确定携带 Cookie
 除了 secure、httpOnly、SameSite 三个属性来增强 Cookie 的安全机制，也可也对的 Cookie 属性添加如下两个前缀来增强安全。
@@ -149,19 +149,19 @@ Session 利用服务端保存会话信息，同时利用 Cookie 保存 SESSIONID
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies > https://www.cookielawinfo.com/tracking-cookies/
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

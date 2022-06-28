@@ -80,13 +80,13 @@ function replace_str() {
                 echo "${base_name} 共 ${lines} 行"
 
                 if echo "$base_name" | grep -q -E '\$$'; then
-                    echo  "*************${file} 存疑，跳过发布*************\n"
+                    echo "*************${file} 存疑，跳过发布*************\n"
                     continue
                 fi
 
                 # [ "/path/to/foo.txt" =~ .*txt$ ] && echo "true" || echo "false"  # 3元？
-                if [ $lines -lt 100 ]; then
-                    echo  "*************${file} 行数小于100，跳过发布*************\n"
+                if [ $lines -lt 20 ]; then
+                    echo "*************${file} 行数小于20，跳过发布*************\n"
                     continue
                 fi
 
@@ -103,11 +103,19 @@ function replace_str() {
                 fi
 
                 # 找到第一次出现'- ['字符的行标，删除该行，避免发布产生该条目录
+                # 对于正则表达式中的空格匹配使用[[:space:]]容易出错，可使用''将正则包裹，后直接输入空格即可，如下行'/- \[/='，其中=为接入调整的文件，其前面为正则
                 local h1=$(sed -n '/- \[/=' ${file} | sed -n '1p')
-                echo '标题目录索引出现在第'$h1'行'
+                
                 # sed -e '${h1}d'发布文章后存在标题目录索引，删除该索引
                 # sed -e '1d' 发布文章后存在多余标题，删除该标题
                 # sed -e $h1'd;1d' -e '1i\ 由于第一行已被删除，指定第一行'1i\ 将没有任何效果，指定为2i
+
+                if [[ "$h1" == '' ]]; then
+                    echo '不存在索引目录'
+                    h1=0
+                else
+                    echo '标题目录索引出现在第'$h1'行'
+                fi
                 sed -e $h1'd;1d' -e '2i\
 ---\
 title: '"${file_name%.*}"'\
@@ -120,9 +128,10 @@ updated: '"$(date -v-6d +%F%t%T)"'\
             ' "${file}" >back
                 # ' -e 's/](resources/](https:\/\/cdn.jsdelivr.net\/gh\/skylinety\/blog-pics\/'${file_name%.*}'\/resources/g' "${file}" >back
                 # ' -e 's/](resources/](http:\/\/ovhnd57o6.bkt.clouddn.com/g' -e 's/.png/.png-content/g; s/.jpg/.jpg-content/g;' "${file}" > back
-                # 找出### 标题的数量，若数量超过4个，则该行数为line值，否则line值为空 sed -n指定输出内容
-                local line=$(sed -n /###/= back | sed -n 4p)
-                echo "------------\n"
+                # 找出## 标题的数量，若数量超过2个，则该行数为line值，否则line值为空 sed -n指定输出内容
+                local line=$(sed -n '/## /=' back | sed -n 3p)
+
+                # -n 需要后续字符串长度非零
                 if [ $lines -ge 30 -a -n "${line}" ]; then
                     sed -i '' "${line}"'a\
 <!--more-->
@@ -139,6 +148,8 @@ updated: '"$(date -v-6d +%F%t%T)"'\
                 #     ' back
                 # cat back >~/workSpace/own/blog/skyline-blog-hexo/blog/source/_posts/${file_name}
                 # cat back >/Volumes/HaHa/WorkSpace/Skyline/Hexo_blog/source/_posts/${file_name}
+                echo $file_name'写入发布目录成功'
+                echo "------------------------------------------------------------------------\n"
                 cat back >$public_url/${file_name}
                 rm -rf back
             # sed -i '' 's/](http:\/\/ovhnd57o6.bkt.clouddn.com/](resources/g' "$file"

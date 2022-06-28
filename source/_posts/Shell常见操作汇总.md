@@ -1,7 +1,7 @@
 ---
 title: Shell常见操作汇总
-updated: 2022-06-03	17:41:57
-date: 2022-05-27	18:06:41
+updated: 2022-06-21	18:02:04
+date: 2021-05-27	18:06:41
 tags: [Shell,Scripts]
 categories: [Major]
 ---
@@ -12,6 +12,7 @@ categories: [Major]
 
 <!-- code_chunk_output -->
 
+  - [脚本中断与执行](#脚本中断与执行)
   - [判定目录或文件存在](#判定目录或文件存在)
   - [算数命令](#算数命令)
   - [查看目录下文件夹](#查看目录下文件夹)
@@ -33,6 +34,27 @@ categories: [Major]
     - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
+
+## 脚本中断与执行
+
+在控制台输入没有的命令来模拟脚本执行出错
+
+```sh
+skyline
+# zsh: command not found: skyline
+```
+
+命令执行出错，继续执行
+
+```sh
+skyline || true
+```
+
+命令执行出错，终止执行
+
+```sh
+skyline || exit 2
+```
 
 ## 判定目录或文件存在
 
@@ -65,12 +87,15 @@ fi
 | -r   | 文件可否读取             |
 | -s   | 文件存在且占用空间大于 0 |
 
-
 ## 算数命令
-使用exprming
+<!--more-->
+
+使用 exprming
+
 ```sh
 expr 1 + 1
 ```
+
 ```sh
 plus=`expr 1 + 1`
 echo $plus
@@ -86,8 +111,6 @@ echo $multiply
 当()前面加上$时，表示 Command-Substitution，与`command`一致，表示其运行结果充当所在命令行的一部分.
 
 (())内部进行算数表达式的计算。
-
-
 
 ## 查看目录下文件夹
 
@@ -146,7 +169,6 @@ vim ~/.bashrc
 `find . -name "*.js" | xargs rm -rf`
 
 ### 解析
-<!--more-->
 
 Shell 中只有部分命令支持标准输入，例如 wc、grep 等，通过管道 | 很容易将前置命令的标准输出传递给这些命令。但是部分命令不支持标准输入，例如 echo rm mkdir 等，这里需要 xargs 来提供
 [xargs](https://github.com/skylinety/Blog/blob/b941cb7487a5e46cee010461e38e89fb2eb897dc/Docs/Major/Shell/Shell%E4%B8%ADxargs%E4%BD%BF%E7%94%A8.md)
@@ -201,19 +223,19 @@ grep 参数
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

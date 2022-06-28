@@ -1,20 +1,17 @@
 ---
 title: ES对象属性
-updated: 2022-01-20	15:47:16
+updated: 2022-06-22	15:16:25
 date: 2022-01-20	15:47:16
-tags: []
-categories: []
+tags: [JS,ES]
+categories: [Major]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# JS 对象的属性
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [JS 对象的属性](#js-对象的属性)
   - [属性描述符](#属性描述符)
     - [属性分类](#属性分类)
     - [Enumerable](#enumerable)
@@ -32,9 +29,6 @@ categories: []
     - [属性检测](#属性检测)
     - [属性遍历](#属性遍历)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
 
@@ -54,6 +48,7 @@ categories: []
   - Set
 
 ### Enumerable
+<!--more-->
 
 Enumerable 表示能否枚举，常见
 
@@ -77,7 +72,6 @@ configurable true，writable false 时，可以通过 Object.defineProperty()修
 ## 属性创建
 
 ### 直接创建
-<!--more-->
 
 直接建立的布尔型属性描述默认都是 true
 
@@ -214,16 +208,15 @@ Object.keys(obj); // []
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 > 《JavaScript 高级程序设计》
 
-### Warrant
+- Warrant
 
 > 本文作者： Skyline(lty)
 > 版权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
-            

@@ -1,6 +1,6 @@
 ---
 title: Factory工厂模式
-updated: 2022-06-03	17:39:32
+updated: 2022-06-21	18:02:00
 date: 2022-06-03	17:39:32
 tags: [CS,DesignPatterns,Creational]
 categories: [Major]
@@ -74,6 +74,7 @@ class Person {
 为了区分，我们可以把这种用包裹构造函数创建对象的方法叫做构建方法（Creation method）
 
 ### 设计模式中的工厂
+<!--more-->
 
 虽然 ES 可以通过 new 关键字直接构造对象，但有时候，只有在具体业务场景中才能知道在多个候选对象中具体实例哪一个，我们可以把实例化的任务委托给工厂。
 
@@ -124,7 +125,6 @@ if (type === 'X6') new Bmw(type, 111000, 320)
 ## 简单工厂（静态工厂）
 
 ### 实现
-<!--more-->
 
 **ES5**
 
@@ -382,19 +382,19 @@ clientCode(new UrbanVehicleFactory())
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > [fbeline/design-patterns-JS/blob](https://github.com/fbeline/design-patterns-JS/blob/master/docs.md#factory) > https://www.zhihu.com/question/27125796
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

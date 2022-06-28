@@ -1,26 +1,24 @@
 ---
 title: Number相关基础操作
-updated: 2022-01-20	15:47:16
+updated: 2022-06-22	15:16:26
 date: 2022-01-20	15:47:16
-tags: []
-categories: []
+tags: [JS,ES]
+categories: [Major]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# Number 相关基础操作
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Number 相关基础操作](#number-相关基础操作)
   - [保留小数](#保留小数)
     - [四舍五入](#四舍五入)
     - [不取舍](#不取舍)
   - [添加千位分隔符](#添加千位分隔符)
     - [toLocaleString](#tolocalestring)
     - [正则](#正则)
+  - [BMW WARNING](#bmw-warning)
 
 <!-- /code_chunk_output -->
 
@@ -57,6 +55,7 @@ toLocaleString 默认保留 3 位小数，且会产生千位分隔符
 ```
 
 ### 不取舍
+<!--more-->
 
 **Math.floor**
 
@@ -84,7 +83,6 @@ toLocaleString 将字符本地串化，第一个参数为串化标准，默认�
 对于小数而言，其会四舍五入保留 3 位
 
 ### 正则
-<!--more-->
 
 ```js
 (1231234234234 + "").replace(/(\d)(?=(\d{3})+$)/g, "$1,");
@@ -99,3 +97,25 @@ toLocaleString 将字符本地串化，第一个参数为串化标准，默认�
   匹配 x 仅仅当 x 后面跟着 y。这种叫做先行断言。
 
 整个正则的意思为后面跟有三个或三的倍数个连续数字的数后面加上逗号
+
+## BMW WARNING
+
+- Bulletin
+
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+
+> I am a bucolic migant worker but I never walk backwards.
+
+- Material
+
+参考资料如下列出，部分引用可能遗漏或不可考，侵删。
+
+>  
+
+- Warrant
+
+本文作者： Skyline(lty)
+
+文章链接：[http://www.skyline.show/Number相关基础操作.html](http://www.skyline.show/Number相关基础操作.html)
+
+授权声明： 本博客所有文章除特别声明外， 均采用 [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh) 协议。 转载请注明出处！

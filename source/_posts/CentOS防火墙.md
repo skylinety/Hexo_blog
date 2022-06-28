@@ -1,6 +1,6 @@
 ---
 title: CentOS防火墙
-updated: 2022-06-03	17:41:58
+updated: 2022-06-21	18:02:05
 date: 2022-01-20	15:47:15
 tags: [OS,Linux]
 categories: [Tools]
@@ -39,6 +39,7 @@ firewalld 是 CentOS 7/8, Red Hat Enterprise Linux 7 (RHEL 7), Fedora 18+等 Lin
 其命令行工具为 firewall-cmd
 
 ### Zones
+<!--more-->
 
 zones 预设级别不同的防火墙策略，用户可以自定义 zones，也可以使用预设的 zones。
 默认使用 public zone
@@ -177,7 +178,6 @@ sudo cp /usr/lib/firewalld/services/ssh.xml /etc/firewalld/services/diyservice.x
 重启防火墙后就可以看到该服务。
 
 ### Runtime
-<!--more-->
 
 Firewalld 提供运行时与永久两种配置有效期限。
 
@@ -369,19 +369,19 @@ sudo firewall-cmd --zone=external --add-forward-port=port=80:proto=tcp:toaddr=10
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > https://linuxize.com/post/how-to-configure-and-manage-firewall-on-centos-8/
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

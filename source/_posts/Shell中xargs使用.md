@@ -1,7 +1,7 @@
 ---
 title: Shell中xargs使用
-updated: 2022-06-03	17:41:56
-date: 2022-05-27	16:06:40
+updated: 2022-06-22	15:16:26
+date: 2021-05-27	16:06:40
 tags: [Shell,Commands]
 categories: [Major]
 ---
@@ -26,9 +26,6 @@ categories: [Major]
     - [-t](#-t)
     - [-p](#-p)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
 
@@ -42,6 +39,7 @@ Shell 中只有部分命令支持标准输入，例如 wc、grep、xargs 等，�
 ## 基础使用示例
 
 ### echo
+<!--more-->
 
 ```
 # input
@@ -139,7 +137,6 @@ ls
 ## 参数
 
 ### -0
-<!--more-->
 
 用 null 作为分隔符，与 find 中 -print0 意义一致，且需一起使用
 
@@ -245,15 +242,15 @@ ls
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 > [Linux and Unix xargs command tutorial with examples](https://shapeshed.com/unix-xargs/) > [8 Practical Examples of Linux Xargs Command for Beginners](https://www.howtoforge.com/tutorial/linux-xargs-command/)
 
-### Warrant
+- Warrant
 
 > 本文作者： Skyline(lty)
 > 版权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

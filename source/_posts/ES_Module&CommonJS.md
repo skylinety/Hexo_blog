@@ -1,7 +1,7 @@
 ---
 title: ES_Module&CommonJS
-updated: 2022-06-03	17:39:33
-date: 2022-05-27	15:41:02
+updated: 2022-06-21	18:02:02
+date: 2021-05-27	15:41:02
 tags: [JS,ES]
 categories: [Major]
 ---
@@ -98,6 +98,7 @@ ES6 兼容 Node.js 模块方案
 | CommonJS | 值浅拷贝       | 运行     | require 同步 |
 
 ## ESM VS CJS 要点解析
+<!--more-->
 
 ### 模块输出
 
@@ -216,20 +217,19 @@ commonJS 规范用同步的方式加载模块.
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
-<!--more-->
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > https://es6.ruanyifeng.com/#docs/module-loader
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

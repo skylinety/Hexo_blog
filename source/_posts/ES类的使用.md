@@ -1,8 +1,8 @@
 ---
 title: ES类的使用
-updated: 2022-06-03	17:39:33
+updated: 2022-06-22	15:16:26
 date: 2022-01-20	15:47:16
-tags: [JS,ES,复杂类型]
+tags: [JS,ES]
 categories: [Major]
 ---
             
@@ -12,7 +12,7 @@ categories: [Major]
 
 <!-- code_chunk_output -->
 
-  - [静态（类）、实例、原型属性与方法](#静态类-实例-原型属性与方法)
+  - [静态（类）、实例、原型属性与方法](#静态类实例原型属性与方法)
     - [ES5](#es5)
     - [ES6](#es6)
     - [属性访问结论](#属性访问结论)
@@ -20,9 +20,6 @@ categories: [Major]
     - [原型方法语法糖](#原型方法语法糖)
     - [Class 中属性与方法的枚举性质](#class-中属性与方法的枚举性质)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#Warrant)
 
 <!-- /code_chunk_output -->
 
@@ -127,6 +124,7 @@ bob.sex;
 ```
 
 ### ES6
+<!--more-->
 
 Baby 类
 
@@ -181,7 +179,6 @@ Baby.age = 1;
 ## Class
 
 ### 原型方法语法糖
-<!--more-->
 
 对于 ES6 的 Baby 类的 toString
 
@@ -225,19 +222,19 @@ Object.keys(skyline.__proto__);
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

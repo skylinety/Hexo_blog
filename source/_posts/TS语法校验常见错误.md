@@ -1,6 +1,6 @@
 ---
 title: TS语法校验常见错误
-updated: 2022-06-03	17:39:33
+updated: 2022-06-21	18:02:03
 date: 2022-06-03	17:39:33
 tags: [JS,TS]
 categories: [Major]
@@ -37,6 +37,7 @@ obj.value = "value"; //[ts] Property 'length' does not exist on type'Object'.
 ```
 
 ### 解决
+<!--more-->
 
 **将对象类型设置为 any**
 
@@ -90,7 +91,6 @@ function getValue(arg: string) {
 ```
 
 ### 解决
-<!--more-->
 
 **tsconfig.json**
 
@@ -114,19 +114,19 @@ function getValue(arg: string) {
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

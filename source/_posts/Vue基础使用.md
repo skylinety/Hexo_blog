@@ -1,6 +1,6 @@
 ---
 title: Vue基础使用
-updated: 2022-06-03	17:41:56
+updated: 2022-06-21	18:02:03
 date: 2022-01-20	15:47:16
 tags: [JS,Vue]
 categories: [Major]
@@ -76,6 +76,7 @@ categories: [Major]
 ```
 
 ### 使用限制
+<!--more-->
 
 transition 仅限用于如下组件上
 
@@ -195,7 +196,6 @@ html 原生是 οnerrοr 来监听图片渲染错误事件
 ### 获取.vue 组件的构造函数
 
 ### 使用示例
-<!--more-->
 
 Vue.extend
 
@@ -542,19 +542,19 @@ const Demo = {
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

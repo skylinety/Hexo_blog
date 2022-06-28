@@ -1,8 +1,8 @@
 ---
 title: ES对象创建
-updated: 2022-06-03	17:39:33
+updated: 2022-06-22	15:16:25
 date: 2022-01-20	15:47:16
-tags: [JS,ES,复杂类型]
+tags: [JS,ES]
 categories: [Major]
 ---
             
@@ -28,9 +28,6 @@ categories: [Major]
   - [寄生构造函数](#寄生构造函数)
   - [稳妥构造函数](#稳妥构造函数)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
 
 <!-- /code_chunk_output -->
 
@@ -52,6 +49,7 @@ me.name; // 'skyline'
 ## 构造函数模式
 
 ### 实现
+<!--more-->
 
 解决了对象识别问题
 
@@ -115,7 +113,6 @@ skyline instanceof Person; // true
 ```
 
 ### 原型判定
-<!--more-->
 
 调用构造函数创建一个新的实例之后，该实例内部包含一个指向构造函数原型对象的指针[[Prototype]]（内部属性）。多数浏览器实现了`__proto__`来获取[[Prototype]]内部属性
 
@@ -267,19 +264,19 @@ var me = Person("skyline");
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 > 《JavaScript 高级程序设计》
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

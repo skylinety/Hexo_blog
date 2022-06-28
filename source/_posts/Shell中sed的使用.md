@@ -1,7 +1,7 @@
 ---
 title: Shell中sed的使用
-updated: 2022-06-03	17:39:33
-date: 2022-05-27	16:29:03
+updated: 2022-06-21	18:02:04
+date: 2021-05-27	16:29:03
 tags: [Shell,Commands]
 categories: [Major]
 ---
@@ -36,7 +36,7 @@ categories: [Major]
 
 ## sed 简介
 
-流编辑器，sed 用于读取指定文件或标准输入。
+sed 是一种流文本编辑器，用于读取指定文件或标准输入。
 如果没有文件被指定，可由命令列表来指定输入，进行相应修改后写入到标准输出。
 本文后续内容以[skyline.txt](https://github.com/skylinety/Blog/blob/main/Demos/Major/Shell/skyline.txt)示例，可在根目录执行下述脚本。
 其文本内容为
@@ -51,6 +51,7 @@ skyline test
 ## 选项参数
 
 ### -n
+<!--more-->
 
 默认情况下，在所有的标准输出都会被打印到屏幕上。 -n 选项用于指定输出内容。
 
@@ -125,21 +126,20 @@ sed -i 's/skyline/lty/g' Demos/Major/Shell/skyline.txt
 ## 命令参数
 
 ### i/a
-<!--more-->
 
 i 与 a 都是插入参数，后面可以接字串，用 a 插入的字串会在行的下一行行首出现，用 i 插入的字串会在当前行的行首。
 插入的字符用\隔开，注意，在 mac 下\后需要换行
 
 ```sh
 # Mac/Linux
-sed -i '' '3i\                                                                                                                                        
+sed -i '' '3i\
 test3' Demos/Major/Shell/skyline.txt
 cat Demos/Major/Shell/skyline.txt
 # test
 # skyline
 # test3test2
 # skyline test
-sed -i '' '3a\                                                                                                                                        
+sed -i '' '3a\
 test3' Demos/Major/Shell/skyline.txt
 # test
 # skyline
@@ -152,6 +152,8 @@ sed -i '' '3a\test3' Demos/Major/Shell/skyline.txt
 
 ### d
 
+- 简单使用
+
 删除命令，之后不接内容。
 
 ```sh
@@ -163,6 +165,58 @@ sed -i '' '$d' Demos/Major/Shell/skyline.txt
 # 删除文件的尾行
 sed -i '' '1,3d!' Demos/Major/Shell/skyline.txt
 # 删除其他行，只保留1-3行
+```
+
+- 使用正则
+
+删除空行
+
+```sh
+# 删除文件中的空行
+sed -i '' '/^$/d' Demos/Major/Shell/skyline.txt
+# 开始与结束衔接，表示该行没有任何内容，即空行
+```
+
+删除有匹配成功对应的行
+
+```sh
+sed -i '' '/skyline/d' Demos/Major/Shell/skyline.txt
+cat Demos/Major/Shell/skyline.txt
+# test
+# test2
+```
+
+删除有匹配成功对应的行
+
+```sh
+sed -i '' '/^skyline$/d' Demos/Major/Shell/skyline.txt
+cat Demos/Major/Shell/skyline.txt
+# test
+# test2
+# skyline test
+```
+
+删除特殊匹配的行
+
+```sh
+# 删除有空格的行
+sed -i '' '/[[:space:]]/d' Demos/Major/Shell/skyline.txt
+cat Demos/Major/Shell/skyline.txt
+# test
+# skyline
+# test2
+
+# 删除有数字的行
+sed -i '' '/[[:digit:]]/d' Demos/Major/Shell/skyline.txt
+cat Demos/Major/Shell/skyline.txt
+# test
+# skyline
+# skyline test
+
+# 删除有小写字母的行
+sed -i '' '/[[:lower:]]/d' Demos/Major/Shell/skyline.txt
+cat Demos/Major/Shell/skyline.txt
+#
 ```
 
 ### p
@@ -179,10 +233,11 @@ sed -n '1,3p' Demos/Major/Shell/skyline.txt
 
 ### s/c
 
-使用s/c 来替换部分内容。
+使用 s/c 来替换部分内容。
 这个 s 通常搭配正则表达式， c 通常替换指定行。
 
 替换行
+
 ```sh
 # 替换1到5行的内容为lalala
 sed -i '' '1,5c\
@@ -192,6 +247,7 @@ cat Demos/Major/Shell/skyline.txt
 ```
 
 替换文本
+
 ```sh
 sed -i '' 's/skyline/lty/g' Demos/Major/Shell/skyline.txt
 # 将不备份直接修改skyline.txt源文件
@@ -201,6 +257,7 @@ cat Demos/Major/Shell/skyline.txt
 # test2
 # lty test
 ```
+
 ## 常见用法
 
 ### 文末插入
@@ -251,19 +308,19 @@ sed -n /skyline/= Demos/Major/Shell/skyline.txt | sed -n 2p
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

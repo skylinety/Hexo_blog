@@ -1,6 +1,6 @@
 ---
 title: Dynamic_Programming
-updated: 2022-06-03	17:39:32
+updated: 2022-06-21	18:02:01
 date: 2022-06-03	17:39:32
 tags: [DataStructure&Algorithm]
 categories: [Major]
@@ -47,6 +47,7 @@ categories: [Major]
 | 股票交易 | |
 
 ### 解题思路
+<!--more-->
 
 ![Dynamic_ProgrammingUntitled 1](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Dynamic_ProgrammingUntitled%201.png)
 
@@ -60,7 +61,6 @@ categories: [Major]
 以[a, b , c, d , e]为例子
 
 ### 解题思路
-<!--more-->
 
 - 节点开头
 
@@ -206,19 +206,19 @@ var climbStairs = function (n) {
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

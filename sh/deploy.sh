@@ -8,5 +8,13 @@ n 10.24.1 2>/dev/null
 cd /Volumes/HaHa/WorkSpace/Skyline/Hexo_blog
 hexo clean
 hexo g
-hexo d 
-n 14.19.0 2>/dev/null
+if (hexo d); then
+    echo '博客发布成功！'
+    n 14.19.0 2>/dev/null
+else
+    echo '博客发布失败'
+    n 14.19.0 2>/dev/null
+    exit 2
+fi
+cd /Volumes/HaHa/WorkSpace/Skyline/blog-pics
+git pull -r || true

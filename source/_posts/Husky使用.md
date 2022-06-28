@@ -1,6 +1,6 @@
 ---
 title: Husky使用
-updated: 2022-06-03	17:49:53
+updated: 2022-06-21	18:02:02
 
 tags: [JS,Packages]
 categories: [Major]
@@ -57,6 +57,7 @@ husky 支持所有 git 相关钩子，在对应 git 操作触发时，可以执�
 Husky 在版本 5 中配置做了大变动，具体前后的配置以版本来说明。
 
 ### V5+
+<!--more-->
 
 yarn add husky -D
 
@@ -142,7 +143,6 @@ package.json
 ## Husky 配置更新
 
 ### git hooks 说明
-<!--more-->
 
 要配置 Git 钩子，只需要简单地在.git/hooks/目录下放对应钩子的可执行文件即可
 ![Husky使用20210924152534](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Husky%E4%BD%BF%E7%94%A820210924152534.png)
@@ -224,15 +224,15 @@ Husky 并不是纯 JS 开发，包含 Shell 脚本，与 Git 交互。
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
 I am a bucolic migrant worker but I never walk backwards.
 
-### Material
+- Material
 
 > [Why husky has dropped conventional JS config](https://blog.typicode.com/husky-git-hooks-javascript-config/)
 
-### Warrant
+- Warrant
 
 > 本文作者： Skyline(lty)
 > 版权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！

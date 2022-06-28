@@ -1,7 +1,7 @@
 ---
 title: Git常见操作
-updated: 2022-06-03	17:41:57
-date: 2022-05-27	15:41:03
+updated: 2022-06-21	18:02:05
+date: 2021-05-27	15:41:03
 tags: [DEVs,Git]
 categories: [Tools]
 ---
@@ -35,11 +35,13 @@ categories: [Tools]
 ```sh
 git diff --name-only --cached
 ```
+
 ![Git常见操作20220602161840](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Git%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C20220602161840.png)
 如上图所示为某次`git status`后展示的信息。
-git diff --name-only --cached展示的信息如下
+git diff --name-only --cached 展示的信息如下
 ![Git常见操作20220602162017](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Git%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C20220602162017.png)
 `git diff --cached`只会展示暂存区文件的变更。
+
 ## Git 本地分支有提交，单独查看并运行远程该分支
 
 本地 dev 分支有自己 commit 的版本，想要获取远端最新代码并运行（不包括本地新 commit 代码）
@@ -55,10 +57,18 @@ git fetch 将本地仓库的所有远程副本更新，但不会更新到工作�
 ![Git常见操作20220302172427](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Git%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C20220302172427.png)
 
 ## 新建仓库时关联远程与本地
+<!--more-->
 
-首先执行
+删除仓库中的.git 文件夹，执行
 `git init`
 法 1：
+
+```bash
+git remote add origin https://git.oschina.net/skylinelty/skyline-blog.git
+git push --set-upstream origin master
+```
+
+法 2：
 
 ```bash
 git remote set-url origin <https://git.oschina.net/skylinelty/skyline-blog.git>
@@ -70,7 +80,7 @@ git pull origin master --allow-unrelated-histories //后面参数防止出现fat
 
 ```
 
-法 2：
+法 3：
 
 ```bash
 git remote set-url origin <https://git.oschina.net/skylinelty/skyline-blog.git>
@@ -155,7 +165,6 @@ git config user.email
 ```
 
 ### 修改全局配置
-<!--more-->
 
 ```sh
 git config --global user.name "username"

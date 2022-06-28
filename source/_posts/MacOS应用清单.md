@@ -1,20 +1,17 @@
 ---
 title: MacOS应用清单
-updated: 2022-01-20	15:47:15
+updated: 2022-06-21	18:02:05
 date: 2022-01-20	15:47:15
-tags: []
-categories: []
+tags: [OS,MacOS]
+categories: [Tools]
 ---
->作者水平有限，文章仅供参考，不对的地方希望各位及时指正，共同进步，不胜感激
             
             
-# MacOS 应用清单
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [MacOS 应用清单](#macos-应用清单)
   - [开发](#开发)
   - [学习](#学习)
   - [效率](#效率)
@@ -33,6 +30,7 @@ categories: []
 ## 学习
 
 ## 效率
+<!--more-->
 
 ### 汇总
 
@@ -55,29 +53,27 @@ Sharemouse 相比，所有键鼠都可共享，但是，Sharemouse 提供的免�
 - Input Director
 
 未安装试用验证。
+在 macOS 系统版本 12.3+以后，已自动支持苹果设备间共用键鼠。
 
 ## 娱乐
 
 ## BMW WARNING
 
-### Bulletin
+- Bulletin
 
-本文首发于 [skyline.show](skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
-### Material
-<!--more-->
+- Material
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
 >
 
-### Warrant
+- Warrant
 
 本文作者： Skyline(lty)
 授权声明： 本博客所有文章除特别声明外， 均采用 CC BY - NC - SA 3.0 协议。 转载请注明出处！
 
 > [CC BY - NC - SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh)
-
-            
