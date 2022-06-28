@@ -1,6 +1,6 @@
 ---
 title: PS局部元素透明
-updated: 2022-06-21	18:02:04
+updated: 2022-06-22	15:43:00
 date: 2022-06-21	18:02:04
 tags: [APPs,Photoshop]
 categories: [Tools]
@@ -17,9 +17,7 @@ categories: [Tools]
   - [修补工具](#修补工具)
   - [调整透明度](#调整透明度)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

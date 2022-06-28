@@ -1,6 +1,6 @@
 ---
 title: CentOS防火墙
-updated: 2022-06-21	18:02:05
+updated: 2022-06-22	15:43:00
 date: 2022-01-20	15:47:15
 tags: [OS,Linux]
 categories: [Tools]
@@ -20,9 +20,7 @@ categories: [Tools]
     - [Port](#port)
     - [Source](#source)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

@@ -1,6 +1,6 @@
 ---
 title: ES类型转换
-updated: 2022-06-21	18:02:02
+updated: 2022-06-22	15:42:58
 date: 2018-01-26	15:14:56
 tags: [JS,ES]
 categories: [Major]
@@ -33,9 +33,7 @@ categories: [Major]
     - [处理规则](#处理规则)
     - [参数](#参数)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

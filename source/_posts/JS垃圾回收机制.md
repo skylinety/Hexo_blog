@@ -1,6 +1,6 @@
 ---
 title: JS垃圾回收机制
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:59
 date: 2022-06-21	18:02:03
 tags: [Refactor&Optimization]
 categories: [Major]
@@ -17,9 +17,7 @@ categories: [Major]
     - [引用计数（Reference Counting）](#引用计数reference-counting)
     - [标记清除（Mark & Sweep）](#标记清除mark--sweep)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

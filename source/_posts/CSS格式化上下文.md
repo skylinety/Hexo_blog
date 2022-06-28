@@ -1,6 +1,6 @@
 ---
 title: CSS格式化上下文
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:58
 date: 2022-06-03	17:39:32
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -19,9 +19,7 @@ categories: [Major]
     - [常见应用](#常见应用)
     - [display: flow-root](#display-flow-root)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

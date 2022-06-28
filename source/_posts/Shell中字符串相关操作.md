@@ -1,6 +1,6 @@
 ---
 title: Shell中字符串相关操作
-updated: 2022-06-21	18:02:04
+updated: 2022-06-22	15:43:00
 date: 2021-05-27	16:06:40
 tags: [Shell,Scripts]
 categories: [Major]
@@ -21,9 +21,7 @@ categories: [Major]
     - [截取语法](#截取语法)
   - [字符串转数组](#字符串转数组)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

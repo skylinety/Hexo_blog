@@ -1,6 +1,6 @@
 ---
 title: Shell中ls的使用
-updated: 2022-06-21	18:02:04
+updated: 2022-06-22	15:42:59
 date: 2017-12-30	15:14:56
 tags: [Shell,Commands]
 categories: [Major]
@@ -17,9 +17,7 @@ categories: [Major]
     - [常见用法](#常见用法)
   - [权限](#权限)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

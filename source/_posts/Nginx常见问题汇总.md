@@ -1,6 +1,6 @@
 ---
 title: Nginx常见问题汇总
-updated: 2022-06-21	18:02:05
+updated: 2022-06-22	15:43:00
 date: 2022-01-20	15:47:15
 tags: [DEVs,Nginx]
 categories: [Tools]
@@ -17,9 +17,7 @@ categories: [Tools]
     - [配置](#配置)
   - [页面刷新不能进入](#页面刷新不能进入)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

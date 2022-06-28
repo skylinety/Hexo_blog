@@ -1,6 +1,6 @@
 ---
 title: Cookie、Session与Token
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:57
 date: 2022-06-03	17:39:32
 tags: [CS,Network]
 categories: [Major]
@@ -20,9 +20,7 @@ categories: [Major]
     - [Cookie 前缀](#cookie-前缀)
   - [Session](#session)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

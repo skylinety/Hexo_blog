@@ -1,6 +1,6 @@
 ---
 title: Flutter基础控件使用
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:59
 date: 2022-06-21	18:02:03
 tags: [Mobile,Flutter]
 categories: [Major]
@@ -24,9 +24,7 @@ categories: [Major]
   - [ListTile](#listtile)
     - [padding 调整](#padding-调整)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#Material)
-    - [Warrant](#Warrant)
+
 
 <!-- /code_chunk_output -->
 

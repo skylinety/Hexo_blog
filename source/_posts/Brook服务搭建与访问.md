@@ -1,6 +1,6 @@
 ---
 title: Brook服务搭建与访问
-updated: 2022-06-21	18:02:05
+updated: 2022-06-22	15:43:00
 date: 2022-01-20	15:47:16
 tags: [APPs,VPN]
 categories: [Tools]
@@ -17,9 +17,7 @@ categories: [Tools]
     - [后台运行](#后台运行)
   - [client](#client)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

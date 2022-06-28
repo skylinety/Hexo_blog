@@ -1,6 +1,6 @@
 ---
 title: Builder建筑工模式
-updated: 2022-06-21	18:02:00
+updated: 2022-06-22	15:42:56
 date: 2022-06-03	17:39:32
 tags: [CS,DesignPatterns,Creational]
 categories: [Major]
@@ -18,9 +18,7 @@ categories: [Major]
     - [找工人](#找工人)
     - [监工](#监工)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#Warrant)
+
 
 <!-- /code_chunk_output -->
 

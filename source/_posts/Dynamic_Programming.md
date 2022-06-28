@@ -1,6 +1,6 @@
 ---
 title: Dynamic_Programming
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:57
 date: 2022-06-03	17:39:32
 tags: [DataStructure&Algorithm]
 categories: [Major]
@@ -25,9 +25,7 @@ categories: [Major]
     - [最大公共子串](#最大公共子串)
     - [一步两步爬楼梯](#一步两步爬楼梯)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

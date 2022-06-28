@@ -1,6 +1,6 @@
 ---
 title: HTML标签
-updated: 2022-06-21	18:02:02
+updated: 2022-06-22	15:42:58
 date: 2022-06-10	16:10:24
 tags: [HTML&CSS,HTML]
 categories: [Major]
@@ -15,9 +15,7 @@ categories: [Major]
   - [script](#script)
     - [type 属性](#type-属性)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

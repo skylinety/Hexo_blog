@@ -1,6 +1,6 @@
 ---
 title: Shell常见操作汇总
-updated: 2022-06-21	18:02:04
+updated: 2022-06-22	15:43:00
 date: 2021-05-27	18:06:41
 tags: [Shell,Scripts]
 categories: [Major]
@@ -29,9 +29,7 @@ categories: [Major]
     - [命令](#命令-1)
     - [解析](#解析-1)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

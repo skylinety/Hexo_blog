@@ -1,6 +1,6 @@
 ---
 title: CSS换行
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:58
 date: 2017-12-30	15:14:56
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -19,9 +19,7 @@ categories: [Major]
   - [处理文字空白](#处理文字空白)
     - [white-space](#white-space)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

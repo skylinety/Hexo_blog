@@ -1,6 +1,6 @@
 ---
 title: CSS样式命中优先级
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:58
 date: 2022-06-15	15:58:53
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -16,9 +16,7 @@ categories: [Major]
   - [其他优先级](#其他优先级)
   - [优先级示例](#优先级示例)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

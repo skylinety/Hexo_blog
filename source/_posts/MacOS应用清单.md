@@ -1,6 +1,6 @@
 ---
 title: MacOS应用清单
-updated: 2022-06-21	18:02:05
+updated: 2022-06-22	15:43:01
 date: 2022-01-20	15:47:15
 tags: [OS,MacOS]
 categories: [Tools]
@@ -19,9 +19,7 @@ categories: [Tools]
     - [barrier](#barrier)
   - [娱乐](#娱乐)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

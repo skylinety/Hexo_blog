@@ -1,6 +1,6 @@
 ---
 title: Interface与AbstractClass
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:59
 date: 2022-06-03	17:39:33
 tags: [JS,TS]
 categories: [Major]
@@ -16,9 +16,7 @@ categories: [Major]
   - [Abstract Class](#abstract-class)
   - [综述](#综述)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#Warrant)
+
 
 <!-- /code_chunk_output -->
 

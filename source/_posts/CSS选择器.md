@@ -1,6 +1,6 @@
 ---
 title: CSS选择器
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:58
 date: 2018-01-25	20:13:37
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -14,9 +14,7 @@ categories: [Major]
 
   - [兄弟选择器](#兄弟选择器)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

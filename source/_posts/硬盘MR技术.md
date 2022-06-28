@@ -1,6 +1,6 @@
 ---
 title: 硬盘MR技术
-updated: 2022-06-21	18:02:00
+updated: 2022-06-22	15:42:57
 date: 2022-06-03	17:39:32
 tags: [CS,Hardware,硬盘]
 categories: [Major]
@@ -21,9 +21,7 @@ categories: [Major]
     - [CMR vs SMR](#cmr-vs-smr)
   - [SMR 优势与弊端](#smr-优势与弊端)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

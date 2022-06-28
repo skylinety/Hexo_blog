@@ -1,6 +1,6 @@
 ---
 title: CSS常见问题汇总
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:57
 date: 2018-01-24    15:14:56
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -16,9 +16,7 @@ categories: [Major]
   - [媒体查询失效](#媒体查询失效)
   - [img 标签是行内还是块级元素](#img-标签是行内还是块级元素)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

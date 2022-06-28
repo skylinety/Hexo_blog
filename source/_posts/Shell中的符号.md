@@ -1,6 +1,6 @@
 ---
 title: Shell中的符号
-updated: 2022-06-21	18:02:04
+updated: 2022-06-22	15:43:00
 date: 2021-05-27	15:41:03
 tags: [Shell]
 categories: [Major]
@@ -18,9 +18,7 @@ categories: [Major]
   - [命令执行符](#命令执行符)
   - [符号标记](#符号标记)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

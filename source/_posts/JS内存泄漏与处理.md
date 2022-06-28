@@ -1,6 +1,6 @@
 ---
 title: JS内存泄漏与处理
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:59
 date: 2022-06-03	17:39:33
 tags: [Refactor&Optimization]
 categories: [Major]
@@ -27,9 +27,7 @@ categories: [Major]
     - [泄漏内存对象详情](#泄漏内存对象详情)
     - [对象引用链](#对象引用链)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

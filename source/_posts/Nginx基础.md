@@ -1,6 +1,6 @@
 ---
 title: Nginx基础
-updated: 2022-06-21	18:02:05
+updated: 2022-06-22	15:43:00
 date: 2022-01-20	15:47:15
 tags: [DEVs,Nginx]
 categories: [Tools]
@@ -22,9 +22,7 @@ categories: [Tools]
     - [/ 问题](#问题)
     - [\$uri \$request_uri](#uri-request_uri)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

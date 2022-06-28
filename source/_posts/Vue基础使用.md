@@ -1,6 +1,6 @@
 ---
 title: Vue基础使用
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:59
 date: 2022-01-20	15:47:16
 tags: [JS,Vue]
 categories: [Major]
@@ -43,9 +43,7 @@ categories: [Major]
     - [监听](#监听)
   - [Vue.observable](#vueobservable)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

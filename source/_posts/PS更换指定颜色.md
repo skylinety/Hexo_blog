@@ -1,6 +1,6 @@
 ---
 title: PS更换指定颜色
-updated: 2022-06-21	18:02:04
+updated: 2022-06-22	15:43:00
 date: 2020-07-11	18:02:04
 tags: [APPs,Photoshop]
 categories: [Tools]
@@ -17,9 +17,7 @@ categories: [Tools]
   - [颜色叠加](#颜色叠加)
   - [新选区图层](#新选区图层)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

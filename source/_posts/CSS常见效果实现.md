@@ -1,6 +1,6 @@
 ---
 title: CSS常见效果实现
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:57
 date: 2017-06-30	15:14:56
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -17,9 +17,7 @@ categories: [Major]
     - [多行溢出省略号](#多行溢出省略号)
   - [实现矩形对角线](#实现矩形对角线)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

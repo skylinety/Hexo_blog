@@ -1,6 +1,6 @@
 ---
 title: Husky使用
-updated: 2022-06-21	18:02:02
+updated: 2022-06-22	15:42:58
 
 tags: [JS,Packages]
 categories: [Major]
@@ -22,9 +22,7 @@ categories: [Major]
     - [V5+ 原理](#v5-原理)
     - [后续问题](#后续问题)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

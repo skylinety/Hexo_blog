@@ -1,6 +1,6 @@
 ---
 title: Shell中grep的使用
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:59
 date: 2020-09-12    15:14:56
 tags: [Shell,Commands]
 categories: [Major]
@@ -21,9 +21,7 @@ categories: [Major]
     - [静默查找](#静默查找)
   - [选项](#选项)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

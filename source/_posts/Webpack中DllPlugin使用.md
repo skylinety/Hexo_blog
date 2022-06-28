@@ -1,6 +1,6 @@
 ---
 title: Webpack中DllPlugin使用
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:58
 date: 2021-05-27	15:41:02
 tags: [JS,Packages,Webpack]
 categories: [Major]
@@ -24,9 +24,7 @@ categories: [Major]
     - [优化前](#优化前)
     - [优化后：](#优化后)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

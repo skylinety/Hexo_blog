@@ -1,6 +1,6 @@
 ---
 title: Factory工厂模式
-updated: 2022-06-21	18:02:00
+updated: 2022-06-22	15:42:56
 date: 2022-06-03	17:39:32
 tags: [CS,DesignPatterns,Creational]
 categories: [Major]
@@ -26,9 +26,7 @@ categories: [Major]
     - [实现](#实现-2)
     - [类图图示](#类图图示-1)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

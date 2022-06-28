@@ -1,6 +1,6 @@
 ---
 title: TS语法校验常见错误
-updated: 2022-06-21	18:02:03
+updated: 2022-06-22	15:42:59
 date: 2022-06-03	17:39:33
 tags: [JS,TS]
 categories: [Major]
@@ -19,9 +19,7 @@ categories: [Major]
     - [复现](#复现-1)
     - [解决](#解决-1)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#Warrant)
+
 
 <!-- /code_chunk_output -->
 

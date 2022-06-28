@@ -1,6 +1,6 @@
 ---
 title: ES_Module&CommonJS
-updated: 2022-06-21	18:02:02
+updated: 2022-06-22	15:42:58
 date: 2021-05-27	15:41:02
 tags: [JS,ES]
 categories: [Major]
@@ -19,9 +19,7 @@ categories: [Major]
     - [模块加载](#模块加载)
   - [tree shaking](#tree-shaking)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

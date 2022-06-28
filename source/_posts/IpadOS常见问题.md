@@ -1,5 +1,5 @@
 ---
-title: IpadOS常见问题
+title: iPadOS常见问题
 updated: 2022-01-20	15:47:15
 date: 2022-01-20	15:47:15
 tags: []

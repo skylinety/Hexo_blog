@@ -1,6 +1,6 @@
 ---
 title: SSH使用
-updated: 2022-06-21	18:02:04
+updated: 2022-06-22	15:43:00
 date: 2022-06-03	17:39:34
 tags: [Shell]
 categories: [Major]
@@ -19,9 +19,7 @@ categories: [Major]
     - [last](#last)
     - [netstat & ss](#netstat--ss)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

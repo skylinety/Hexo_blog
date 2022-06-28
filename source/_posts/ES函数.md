@@ -1,6 +1,6 @@
 ---
 title: ES函数
-updated: 2022-06-21	18:02:02
+updated: 2022-06-22	15:42:58
 date: 2017-05-11	20:56:32
 tags: [JS,ES]
 categories: [Major]
@@ -17,9 +17,7 @@ categories: [Major]
     - [按值传递](#按值传递)
     - [引用传递](#引用传递)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 

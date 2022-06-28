@@ -1,6 +1,6 @@
 ---
 title: CSS弹性布局主轴元素设置单独对齐方式
-updated: 2022-06-21	18:02:01
+updated: 2022-06-22	15:42:58
 date: 2018-07-30	15:14:56
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -15,9 +15,7 @@ categories: [Major]
   - [效果图示](#效果图示)
   - [效果实现](#效果实现)
   - [BMW WARNING](#bmw-warning)
-    - [Bulletin](#bulletin)
-    - [Material](#material)
-    - [Warrant](#warrant)
+
 
 <!-- /code_chunk_output -->
 
