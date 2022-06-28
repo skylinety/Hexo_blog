@@ -152,6 +152,32 @@
     line-height: line-height-title
     margin: 0
     padding: line-height-title 0 0
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  h2
+    font-size: 22px
+    position: relative
+    padding: 12px 36px
+  h2:before 
+    width: 28px
+    height: 28px
+    background-size: 28px 28px
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    margin: auto
+    margin-right: 3px
+    background-image: url(images/anchor.png)
+    animation: spin 2s linear 1s infinite
   a
     color: color-link
     text-decoration: none
@@ -163,6 +189,8 @@
     margin-bottom: line-height
   >ul:nth-of-type(1)
     color: color-link
+  >ul
+    margin-left: 0
   ul
     li::marker
       content: ''
