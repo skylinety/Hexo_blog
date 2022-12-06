@@ -1,6 +1,6 @@
 ---
 title: CSS常见问题汇总
-updated: 2022-06-22	15:42:57
+updated: 2022-06-30	16:14:49
 date: 2018-01-24    15:14:56
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -12,13 +12,35 @@ categories: [Major]
 
 <!-- code_chunk_output -->
 
+  - [CSS 继承与非继承属性](#css-继承与非继承属性)
   - [display:none 与 visibility:hidden 区别](#displaynone-与-visibilityhidden-区别)
   - [媒体查询失效](#媒体查询失效)
   - [img 标签是行内还是块级元素](#img-标签是行内还是块级元素)
   - [BMW WARNING](#bmw-warning)
 
-
 <!-- /code_chunk_output -->
+
+## CSS 继承与非继承属性
+
+CSS 属性在不设定取值时，其实际取值分为两种。
+一种为继承属性，取父级元素该属性对应的值。
+一种为非继承属性，去该属性的默认值。
+由于 CSS 属性繁多，不容易死记来区分，一般可通过经验来判断一个属性是否可继承。
+
+常见的不可继承属性如下：
+
+- display
+- 盒模型相关属性，如宽、高、内外边距、边框
+- 背景相关属性：如背景颜色、图片、位置、大小、重复
+- 定位相关属性：如 float、clear、position
+- 内容相关属性：如 content、counter-reset、counter-increment
+
+其他属性多为可继承属性，例如：
+
+- 字体相关属性
+- 部分文本相关属性
+- 元素可见属性 visibility
+- 光标属性 cursor
 
 ## display:none 与 visibility:hidden 区别
 
@@ -40,6 +62,7 @@ display 不是继承属性，而 visibility 是继承属性。
 | visibility:hidden | 是       | 否       | 所处区域空白 | 是（visibility）      |
 
 ## 媒体查询失效
+<!--more-->
 
 媒体查询的常见用法为
 
@@ -60,7 +83,6 @@ display 不是继承属性，而 visibility 是继承属性。
 ```
 
 ## img 标签是行内还是块级元素
-<!--more-->
 
 img 标签是行内元素。
 打开控制台查看：

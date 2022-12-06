@@ -1,6 +1,6 @@
 ---
 title: Shell中ls的使用
-updated: 2022-06-22	15:42:59
+updated: 2022-06-30	16:18:13
 date: 2017-12-30	15:14:56
 tags: [Shell,Commands]
 categories: [Major]
@@ -18,7 +18,6 @@ categories: [Major]
   - [权限](#权限)
   - [BMW WARNING](#bmw-warning)
 
-
 <!-- /code_chunk_output -->
 
 ## 基础使用
@@ -27,11 +26,13 @@ categories: [Major]
 
 ls 即 list，列出目录内容
 
-| 参数 | 使用  | 描述                             |
-| ---- | ----- | -------------------------------- |
-| 1    | ls -1 | 换行列出文件                     |
-| a    | ls -a | 列出所有文件，包括隐藏文件       |
-| d    | ls -d | 列出当前目录本身，而不是其下内容 |
+| 参数 | 使用  | 描述                                   |
+| ---- | ----- | -------------------------------------- |
+| 1    | ls -1 | 换行列出文件                           |
+| l    | ls -l | 换行列出文件详细信息                   |
+| a    | ls -a | 列出所有文件，包括隐藏文件             |
+| d    | ls -d | 列出当前目录本身，而不是其下内容       |
+| h    | ls -h | 文件大小可读化输出，需要与 -l 配合使用 |
 
 ### 常见用法
 <!--more-->
@@ -66,37 +67,28 @@ ls -ld
 
 ```sh
 ls -l
-# total 0
-# drwx------@  3 skyline  staff   102B  4  4 11:17 Applications
-# drwx------+ 16 skyline  staff   544B  5 11 17:52 Desktop
-# drwx------+ 11 skyline  staff   374B  4 18 09:33 Documents
-# drwx------+ 78 skyline  staff   2.6K  5 26 10:43 Downloads
-# drwxr-xr-x   4 skyline  staff   136B  5 11 10:17 ENV
-# drwxr-xr-x   5 skyline  staff   170B  4  5 15:30 HBuilder
-# drwxr-xr-x   3 skyline  staff   102B  4  5 15:30 HBuilderProjects
-# drwx------@ 64 skyline  staff   2.1K  5 22 14:18 Library
-# drwx------+  3 skyline  staff   102B  4  3 12:30 Movies
-# drwx------+  6 skyline  staff   204B  4 25 17:31 Music
-# drwx------+  3 skyline  staff   102B  5 22 14:19 Pictures
-# drwxr-xr-x+  5 skyline  staff   170B  4  3 12:30 Public
-# drwxr-xr-x   9 skyline  staff   306B  5 11 09:57 workSpace
+# total 8
+# drwxr-xr-x  5 macmini  staff   170B Mar  3 17:06 Demos
+# drwxr-xr-x+  7 macmini  staff   238B Jun 15 16:39 Docs
+# -rwxr-xr-x  1 macmini  staff   143B Sep 18  2021 README.md
 ```
 
-上述倒数第二列`drwxr-xr-x+ 5 skyline staff 170B 4 3 12:30 Public`的含义如下
+上述倒数第二列`drwxr-xr-x+ 7 macmini staff 238B Jun 15 16:39 Docs`的含义如下
 
 | 文件格式 | 所有者权限 | 群组权限 | 其他人权限 | ACL 权限 | 引用计数 | 所有者  | 所在组 | 大小 | 最后修改日期 | 文件名 |
 | -------- | ---------- | -------- | ---------- | -------- | -------- | ------- | ------ | ---- | ------------ | ------ |
-| d        | rwx        | r-x      | r-x        | +        | 5        | skyline | staff  | 170B | 4 3 12:30    | Public |
+| d        | rwx        | r-x      | r-x        | +        | 5        | macmini | staff  | 238B | Jun 15 16:39 | Docs   |
 
 权限由第一列列出，一般有 11 位，即如上`drwxr-xr-x+`
 
 - 第 1 位代表文件类型:
 
-  - -文件
-  - d 目录
-  - l 软链接文件
-  - b 装置文件里面的可供储存的接口设备(可随机存取装置)；
-  - c 装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)
+  - `-` 普通文件
+  - `d` 目录
+  - `l` 软链接文件
+  - `s` socket 文件
+  - `b` 装置文件里面的可供储存的接口设备(可随机存取装置)；
+  - `c` 装置文件里面的串行端口设备，例如键盘、鼠标(一次性读取装置)
 
 - 接下来中间 9 位，以 3 个为 1 组，且均为『rwx』 的 3 个参数的组合。
   - [ r ]代表可读(read)
@@ -106,7 +98,7 @@ ls -l
 要注意的是，这三个权限的位置不会改变，如果没有权限，就会出现减号[ - ]而已。
 
 对目录如果没有 w 权限，即使里面的文件有写权限，也不能对文件进行移动，重命名操作。
-此时，需要给目录加上 w 权限：`chmod +w`（注意此时 cwd 是此目录）
+此时，需要给目录加上 w 权限：`chmod +w`（注意命令在该目录下执行）
 
 ## BMW WARNING
 

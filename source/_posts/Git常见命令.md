@@ -1,12 +1,28 @@
 ---
 title: Git常见命令
-updated: 2022-06-21	18:02:05
+updated: 2022-10-25	18:16:39
 date: 2022-06-21	18:02:05
 tags: [DEVs,Git]
 categories: [Tools]
 ---
             
             
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+  - [pull](#pull)
+    - [git pull -r VS git pull](#git-pull--r-vs-git-pull)
+  - [diff](#diff)
+    - [--name-only](#--name-only)
+  - [submodule](#submodule)
+    - [submodule 概述](#submodule-概述)
+    - [初始子仓库](#初始子仓库)
+    - [更新子仓库](#更新子仓库)
+  - [BMW WARNING](#bmw-warning)
+
+<!-- /code_chunk_output -->
 
 ## pull
 
@@ -32,20 +48,45 @@ git pull -r 会将当前提交的记录（E）删除并重新生成一个新的�
 
 ## diff
 <!--more-->
+
 ### --name-only
---name-only用于获取变更的文件名
+
+--name-only 用于获取变更的文件名
 git diff 仅会展示更改和删除变更的文件，**不会展示新增的文件**。
 通过
+
 ```sh
 git diff --name-only
 ```
-查看当前工作区中本次变更的文件信息。其后可接版本HASH。
+
+查看当前工作区中本次变更的文件信息。其后可接版本 HASH。
+
+## submodule
+
+### submodule 概述
+
+submodule 用于 git 仓库中嵌套其他仓库作为其子模块，嵌入的子模块仓库可以在其内正常进行 git 相关的操作。
+
+### 初始子仓库
+
+```sh
+git submodule add  https://github.com/skylinety/Blog.git
+```
+
+### 更新子仓库
+
+```sh
+git submodule sync
+git submodule update --init
+```
+
+或直接到子仓库目录下执行拉取等操作
 
 ## BMW WARNING
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show)  欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
 
 > I am a bucolic migrant worker but I never walk backwards.
 
