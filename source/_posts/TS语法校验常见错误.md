@@ -1,8 +1,8 @@
 ---
 title: TS语法校验常见错误
-updated: 2022-06-22	15:42:59
+updated: 2023-02-04	15:45:53
 date: 2022-06-03	17:39:33
-tags: [JS,TS]
+tags: [JS,TS,实战]
 categories: [Major]
 ---
             

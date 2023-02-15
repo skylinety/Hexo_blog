@@ -1,8 +1,8 @@
 ---
 title: Shell中xargs使用
-updated: 2022-06-22	15:16:26
+updated: 2023-02-04	15:45:55
 date: 2021-05-27	16:06:40
-tags: [Shell,Commands]
+tags: [Shell,语法]
 categories: [Major]
 ---
             

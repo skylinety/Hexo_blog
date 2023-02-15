@@ -1,8 +1,8 @@
 ---
 title: SSH使用
-updated: 2022-06-22	15:43:00
+updated: 2023-02-04	15:45:54
 date: 2022-06-03	17:39:34
-tags: [Shell]
+tags: [Shell,实战]
 categories: [Major]
 ---
             

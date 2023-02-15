@@ -1,6 +1,6 @@
 ---
 title: CSS常见问题汇总
-updated: 2022-06-30	16:14:49
+updated: 2023-01-24	17:57:07
 date: 2018-01-24    15:14:56
 tags: [HTML&CSS,CSS]
 categories: [Major]
@@ -104,7 +104,9 @@ img 标签可能不太好理解，另一个常见的行内可替换元素是 ifr
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migrant worker but I never walk backwards.
 

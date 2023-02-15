@@ -1,8 +1,8 @@
 ---
 title: Shell中chmod的使用
-updated: 2022-06-30	17:44:40
+updated: 2023-02-04	15:45:55
 date: 2022-06-28	10:03:33
-tags: [Shell,Commands]
+tags: [Shell,语法]
 categories: [Major]
 ---
             
@@ -42,7 +42,19 @@ categories: [Major]
 | -------- | ------------- | ----------- | ------------- | -------- | -------- | ------- | ------ | ---- | ------------ | ------ |
 | d        | rwx           | r-x         | r-x           | +        | 5        | macmini | staff  | 238B | Jun 15 16:39 | Docs   |
 
-其 2-10 位位权限位，以 3 个为 1 组，且均为『rwx』 的 3 个参数的组合。
+第一位为文件格式，其字符含义对照如下
+
+| 字符 | 含义                |
+| ---- | ------------------- |
+| -    | 文件                |
+| d    | 文件夹（directory） |
+| l    | 连接（link）        |
+| c    | 字符设备（char）    |
+| b    | 块设备（block）     |
+| s    | 套接字（sockets）   |
+| p    | 管道（pipe）        |
+
+其余 2-10 位位权限位，以 3 个为 1 组，且均为『rwx』 的 3 个参数的组合。
 
 要注意的是，这三个权限的位置不会改变，如果没有权限，该位置以[ - ]占位。
 
@@ -362,7 +374,9 @@ Sticky bit 常用于共享文件夹中限制其他人的删除权限。
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migant worker but I never walk backwards.
 

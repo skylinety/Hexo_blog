@@ -1,6 +1,6 @@
 ---
 title: Latex语法
-updated: 2022-10-14	17:07:02
+updated: 2023-02-09	09:12:13
 date: 2022-10-14	16:47:06
 tags: [Others]
 categories: [Tools]
@@ -17,7 +17,7 @@ categories: [Tools]
   - [符号](#符号)
     - [关系符](#关系符)
     - [表达式](#表达式)
-    - [符号](#符号-1)
+    - [其他符号](#其他符号)
     - [无符号标记](#无符号标记)
   - [BMW WARNING](#bmw-warning)
 
@@ -98,7 +98,7 @@ $$ \frac{a+1}{b+1} \quad $$
 | $\dot a$ | `\dot`    |
 | $\"a$ | `\"`    |
 
-### 符号
+### 其他符号
 
 | 符号        | 写法        | 示例 |
 | ----------- | ----------- | ---- |
@@ -123,7 +123,9 @@ $$ \frac{a+1}{b+1} \quad $$
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migant worker but I never walk backwards.
 

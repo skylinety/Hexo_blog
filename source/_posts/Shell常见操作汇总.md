@@ -1,8 +1,8 @@
 ---
 title: Shell常见操作汇总
-updated: 2022-06-30	17:44:40
+updated: 2023-02-04	15:45:54
 date: 2021-05-27	18:06:41
-tags: [Shell,Scripts]
+tags: [Shell,实战]
 categories: [Major]
 ---
             
@@ -166,17 +166,25 @@ echo $multiply
 
 ## 查看目录下文件夹
 
+查看当前目录信息
+
 ```sh
-ls -d src/*/
+ls -dlh /var/log
+# drwxr-xr-x  47 root  wheel   1.5K Jan  6 09:22 /var/log
 ```
 
 查看 src 下包含的文件夹
 
 ```sh
-ls -d1 */
+ls -d src/*/
 ```
 
 换行形式查看当前目录下的文件夹
+
+```sh
+ls -d1 */
+```
+
 ![Shell常见操作汇总20220322171654](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Shell%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C%E6%B1%87%E6%80%BB20220322171654.png)
 
 ## 创建嵌套文件夹并进入
@@ -277,7 +285,9 @@ grep 参数
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migant worker but I never walk backwards.
 

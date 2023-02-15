@@ -1,8 +1,8 @@
 ---
 title: ES数组去重
-updated: 2022-06-22	15:16:25
+updated: 2023-02-04	16:24:24
 date: 2017-07-30	15:14:56
-tags: [JS,ES]
+tags: [JS,ES,实战]
 categories: [Major]
 ---
             
@@ -163,7 +163,9 @@ Map 的键实际上是跟内存地址绑定的，只要内存地址不一样，�
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migant worker but I never walk backwards.
 

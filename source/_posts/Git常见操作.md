@@ -1,6 +1,6 @@
 ---
 title: Git常见操作
-updated: 2022-11-06	16:49:51
+updated: 2023-01-24	17:57:11
 date: 2021-05-27	15:41:03
 tags: [DEVs,Git]
 categories: [Tools]
@@ -264,7 +264,9 @@ git push
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migant worker but I never walk backwards.
 

@@ -1,8 +1,8 @@
 ---
 title: Shell基础命令
-updated: 2022-06-21	16:48:42
+updated: 2023-02-04	15:45:55
 date: 2022-06-21	16:48:42
-tags: [Shell,Commands]
+tags: [Shell,语法]
 categories: [Major]
 ---
             

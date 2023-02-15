@@ -1,8 +1,8 @@
 ---
 title: ES_Module&CommonJS
-updated: 2022-06-22	15:42:58
+updated: 2023-02-04	16:24:24
 date: 2021-05-27	15:41:02
-tags: [JS,ES]
+tags: [JS,ES,语法]
 categories: [Major]
 ---
             

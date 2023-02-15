@@ -1,8 +1,8 @@
 ---
 title: Shell中的符号
-updated: 2022-06-28	10:09:07
+updated: 2023-02-04	15:45:55
 date: 2021-05-27	15:41:03
-tags: [Shell]
+tags: [Shell,语法]
 categories: [Major]
 ---
             

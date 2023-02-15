@@ -1,6 +1,6 @@
 ---
 title: Git常见命令
-updated: 2022-10-25	18:16:39
+updated: 2023-01-24	17:57:11
 date: 2022-06-21	18:02:05
 tags: [DEVs,Git]
 categories: [Tools]
@@ -12,21 +12,46 @@ categories: [Tools]
 
 <!-- code_chunk_output -->
 
+  - [reflog](#reflog)
   - [pull](#pull)
     - [git pull -r VS git pull](#git-pull--r-vs-git-pull)
   - [diff](#diff)
     - [--name-only](#--name-only)
   - [submodule](#submodule)
     - [submodule 概述](#submodule-概述)
-    - [初始子仓库](#初始子仓库)
+    - [添加子仓库](#添加子仓库)
     - [更新子仓库](#更新子仓库)
   - [BMW WARNING](#bmw-warning)
 
 <!-- /code_chunk_output -->
 
+## reflog
+
+git reflog 用于记录本地 git 历史操作记录，包括 commit、reset、checkout 等
+通过
+
+```sh
+git reflog show <branch>
+# git reflog <branch>
+```
+
+查看对应分支的历史操作记录，不接 branch 时，默认为当前分支
+
+通过 grep 搭配使用可进行很多有用操作
+例如，查看当前分支基于哪个分支创建
+
+```sh
+git reflog | grep checkout
+```
+
+![Git常见命令20221206115805](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/Git%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A420221206115805.png)
+
+git reflog 可以查看到被删除的提交记录，对于误合并或回滚时，常可以用以查找需要找回的代码。
+
 ## pull
 
 ### git pull -r VS git pull
+<!--more-->
 
 语法糖？
 
@@ -47,7 +72,6 @@ git pull -r 会将当前提交的记录（E）删除并重新生成一个新的�
 看起来就像是在最近远端提交记录 D 上拉的代码，使得提交记录为一条直线。
 
 ## diff
-<!--more-->
 
 ### --name-only
 
@@ -67,7 +91,7 @@ git diff --name-only
 
 submodule 用于 git 仓库中嵌套其他仓库作为其子模块，嵌入的子模块仓库可以在其内正常进行 git 相关的操作。
 
-### 初始子仓库
+### 添加子仓库
 
 ```sh
 git submodule add  https://github.com/skylinety/Blog.git
@@ -86,7 +110,9 @@ git submodule update --init
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migrant worker but I never walk backwards.
 

@@ -1,8 +1,8 @@
 ---
 title: ES对象创建
-updated: 2022-06-22	15:16:25
+updated: 2023-02-04	16:24:24
 date: 2022-01-20	15:47:16
-tags: [JS,ES]
+tags: [JS,ES,语法]
 categories: [Major]
 ---
             

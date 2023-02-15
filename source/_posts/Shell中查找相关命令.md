@@ -1,8 +1,8 @@
 ---
 title: Shell中查找相关命令
-updated: 2022-06-30	16:18:13
+updated: 2023-02-04	15:45:55
 date: 2018-01-22    15:14:56
-tags: [Shell,Commands]
+tags: [Shell,语法]
 categories: [Major]
 ---
             
@@ -248,7 +248,9 @@ grep [options] pattern [files]
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migant worker but I never walk backwards.
 

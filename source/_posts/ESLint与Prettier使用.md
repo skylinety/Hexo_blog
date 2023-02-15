@@ -1,6 +1,6 @@
 ---
 title: ESLint与Prettier使用
-updated: 2022-11-30	10:23:56
+updated: 2023-01-24	17:57:08
 date: 2022-11-06	17:21:04
 tags: [JS,Packages]
 categories: [Major]
@@ -258,7 +258,9 @@ npm i -D @vue/cli-plugin-babel@4.4.6 @vue/cli-plugin-eslint@4.4.6 @vue/eslint-co
 
 - Bulletin
 
-本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问。
+本文首发于 [skyline.show](http://www.skyline.show) 欢迎访问，
+文章实时更新，如果有什么错误或不严谨之处望请指出，十分感谢。
+如果你觉得有用，欢迎到[Github仓库](https://github.com/skylinety/Blog)点亮⭐️。
 
 > I am a bucolic migant worker but I never walk backwards.
 
