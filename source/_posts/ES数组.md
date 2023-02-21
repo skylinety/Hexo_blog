@@ -1,6 +1,6 @@
 ---
 title: ES数组
-updated: 2023-02-09	09:12:14
+updated: 2023-02-10	18:20:04
 date: 2018-01-24	15:14:56
 tags: [JS,ES,语法]
 categories: [Major]
@@ -115,9 +115,11 @@ Array.apply(null, { length: 7 }).map(() => 1)
 ### slice 截取
 
 ```jsx
-'skyline'
-  .slice(1, 5) // "kyli"
-  [('s', 'k', 'y', 'l', 'i', 'n', 'e')].slice(1, 5) // ["k", "y", "l", "i"]
+'skyline'.slice(1, 5)
+ // "kyli"
+ 
+['s', 'k', 'y', 'l', 'i', 'n', 'e'].slice(1, 5)
+ // ["k", "y", "l", "i"]
 ```
 
 ![ES数组20230210161709](https://raw.githubusercontent.com/skylinety/blog-pics/master/imgs/ES%E6%95%B0%E7%BB%8420230210161709.png)

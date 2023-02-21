@@ -1,8 +1,8 @@
 ---
 title: Python中list使用
-updated: 2023-01-24	17:57:09
+updated: 2023-02-15	15:26:30
 date: 2022-07-07	18:18:05
-tags: [Python]
+tags: [Python,语法]
 categories: [Major]
 ---
             

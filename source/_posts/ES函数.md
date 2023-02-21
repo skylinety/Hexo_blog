@@ -1,6 +1,6 @@
 ---
 title: ES函数
-updated: 2023-02-04	17:36:36
+updated: 2023-02-15	16:48:57
 date: 2017-05-11	20:56:32
 tags: [JS,ES,语法]
 categories: [Major]
@@ -12,7 +12,8 @@ categories: [Major]
 
 <!-- code_chunk_output -->
 
-  - [arguments](#arguments)
+  - [函数的长度](#函数的长度)
+  - [函数参数](#函数参数)
   - [参数传递](#参数传递)
     - [按值传递](#按值传递)
     - [引用传递](#引用传递)
@@ -21,16 +22,36 @@ categories: [Major]
     - [作用域前后变化](#作用域前后变化)
     - [懒执行](#懒执行)
     - [TDZ(Temporal Dead Zone)](#tdztemporal-dead-zone)
+  - [函数创建](#函数创建)
+  - [作用域链](#作用域链)
   - [BMW WARNING](#bmw-warning)
 
 <!-- /code_chunk_output -->
 
-## arguments
+## 函数的长度
 
-- arguments 是一个类数组
-- 它的值永远与对应命名参数的值保持同步。
-  设函数第 n 个参数为 a， 当在函数内部修改了 a，那么 arguments[n-1]保持同步也为更改后的值
-- arguments 的长度是由运行时传入参数个数决定的，而不是定义时
+函数的长度等于形参的个数。
+
+```jsx
+function skyline(a, b, c){
+    console.log(`输入${arguments.length}个参数`)
+}
+
+console.log(`函数的长度为：${skyline.length}`)
+
+skyline(1)
+
+// 函数的长度为：3
+// 输入1个参数
+```
+## 函数参数
+
+函数的参数被放在一个arguments的类数组中。
+
+它的值永远与对应命名参数的值保持同步。  
+设函数第 n 个参数为 a， 当在函数内部修改了 a，那么 arguments[n-1]保持同步也为更改后的值
+
+arguments 的长度是由运行时传入参数个数决定的，而不是定义时
 
 ```js
 function test(a, b, c) {
@@ -64,10 +85,34 @@ createArray6(11, 2, 3)
 
 不同于 ES5 的 arguments 是一种类数组，ES6 拓展运算符获取 args 是一个数组。
 
+arguments 与实参的绑定的绑定情况如下：
+非严格，传入值共享，没传不共享
+
+```jsx
+function skyline(a, b, c){
+    console.log(`输入的a:${a}`)
+    console.log(`输入的第一个参数：${arguments[0]}`)
+    b = 2
+    console.log(`b值为${b}`)
+    console.log(`第而个参数：${arguments[1]}`)
+}
+
+console.log(`函数的长度为：${skyline.length}`)
+
+skyline(1)
+
+// 函数的长度为：3
+// 2 输入的a:1
+// 3 输入的第一个参数：1
+// 5 b值为2
+// 6 第而个参数：undefined
+```
+
+在严格模式下，实参和 arguments 是不会共享的，也就是都会为上述b的情况。
 ## 参数传递
+<!--more-->
 
 ### 按值传递
-<!--more-->
 
 **函数的参数都是按值传递的，当传递引用类型的值时，会把这个值在内存中的地址复制给局部变量**。
 其实质就是把实参在内存中的数据传递给形参，基本类型拷贝了本身，引用类型拷贝的是引用的地址。
@@ -228,6 +273,18 @@ skyline(1, 2)
 skyline(undefined, 2) //Uncaught ReferenceError: Cannot access 'y' before initialization
 ```
 
+## 函数创建
+
+函数创建一般有函数声明与函数表达式两种方式。
+函数表达式: `let fn1 = function() {}`
+函数声明: `function fn2() {}`
+Javascript 解析器会率先读取函数声明，在函数代码执行之前，已经将函数声明提升到执行环境，故可以在声明前执行。
+但是，函数表达式提前执行会导致错误。
+
+## 作用域链
+作用域链的作用是保证最执行环境有权访问的所有变量和函数的有序访问。
+作用域链最前端始终都是当前代码所在环境的变量对象，而后一步一步向外成延伸，直到全局执行环境。
+标志符解析是沿着作用域链一级一级搜索的过程，直到找到为止，故而位于作用域链最前端的变量作为当前环境的变量。
 ## BMW WARNING
 
 - Bulletin
@@ -242,7 +299,7 @@ skyline(undefined, 2) //Uncaught ReferenceError: Cannot access 'y' before initia
 
 参考资料如下列出，部分引用可能遗漏或不可考，侵删。
 
->
+> 《JavaScript 高级程序设计》
 
 - Warrant
 
