@@ -3,9 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Skyline's blog
+title: 鹧鸪天
 subtitle: 大江东去，长安西去，为功名走遍天涯路。 厌舟车，喜琴书，早星星鬓影瓜田暮。 心待足时名便足：高，高处苦；低，低处苦 — 薛昂夫
-description: 不瓜，也不怎么爱吃瓜，不好好写字的程序猿不是合格的农民，所以要多爬爬东坡，多亲近方块呀
+description: 乍起新寒风又嚎，厦间不见杜家茅。落棋柯烂朝兴替，弹指风挥花盛飘。梦缥缈，路遥迢，随流逐浪几多豪？待心足了即名了，斜雨泥丫印土桥。
+section_first: 乍起新寒风又嚎，厦间不见杜家茅。落棋柯烂朝兴替，弹指风挥花盛飘。
+section_last: 梦缥缈，路遥迢，随流逐浪几多豪？待心足了即名了，斜雨泥丫印土桥。
+# description: 不瓜，也不怎么爱吃瓜，不好好写字的程序猿不是合格的农民，所以要多爬爬东坡，多亲近方块呀
 author: skyline
 language: zh-CN
 timezone:
