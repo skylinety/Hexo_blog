@@ -49,6 +49,7 @@ function replace_str() {
                 local post=''$public_url''$file_name''
                 echo $post
                 local publish_date="date: $(date -v-6d +%F%t%T)"
+                local top="top: 1000"
                 # 截取目录前缀，eval将字符串中内容作为命令执行
                 local tag_source_str=$(eval 'echo $dir_name | cut -c'$(expr ${#dir} + 2)'-')
                 # local tag_source_str=$(eval 'echo $dir_name | cut -c'$( (expr ${#dir} + 2))'-')
@@ -96,6 +97,7 @@ function replace_str() {
                 if [ -f "$post" ]; then
                     echo "$file_name 文章本次变更"
                     publish_date=$(grep "date:" "${post}" | head -n 1)
+                    top=$(grep "top:" "${post}" | head -n 1)
                     # tags=$(grep "tags:" "${post}" | head -n 1)
                     # categories=$(grep "categories:" "${post}" | head -n 1)
                 else
@@ -122,6 +124,7 @@ title: '"${file_name%.*}"'\
 updated: '"$(date -v-6d +%F%t%T)"'\
 '"${publish_date}"'\
 '"${tags}"'\
+'"${top}"'\
 '"${categories}"'\
 ---\
             \
