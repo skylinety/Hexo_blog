@@ -1188,6 +1188,14 @@ hexo-generator-index-pin-top@^0.2.2:
     hexo-pagination "0.0.2"
     object-assign "^4.0.1"
 
+hexo-generator-index@^0.2.2:
+  version "0.2.1"
+  resolved "https://registry.npmmirror.com/hexo-generator-index/-/hexo-generator-index-0.2.1.tgz#9042229fcac79aaf700575da19332bf3f7ee5c5d"
+  integrity sha512-QTt0YNgYAwQu8YQ37fruSaR2qrGHmFU0ZYbvkeaZP0RmzZSbdAWg1pw0kx6J4ibOzRHIBPk/qOWhptUC110PSQ==
+  dependencies:
+    hexo-pagination "0.0.2"
+    object-assign "^4.0.1"
+
 hexo-generator-json-content@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmmirror.com/hexo-generator-json-content/-/hexo-generator-json-content-3.0.1.tgz#817cfcecbe9abd93041405f24060dbe93e984744"

@@ -2,8 +2,23 @@
 
 # source_url=/Volumes/HaHa/WorkSpace/Skyline/Blog/Docs
 # source_url=./md_backs
-source_url=/Volumes/HaHa/WorkSpace/Skyline/Blog/Docs
-public_url=/Volumes/HaHa/WorkSpace/Skyline/Hexo_blog/source/_posts/
+
+
+echo $sh_path
+
+echo $base_dir
+
+# 发布目录
+public_url=$base_dir"Hexo_blog/source/_posts/"
+echo "发布文章目录"$public_url
+# public_url=/Volumes/HaHa/WorkSpace/Skyline/Hexo_blog/source/_posts/
+
+# 笔记源仓库Blog目录，与博客仓库Hexo_blog放在统一目录下
+source_url=$base_dir"Blog/Docs"
+echo "文章源目录"$source_url
+# source_url=/Volumes/HaHa/WorkSpace/Skyline/Blog/Docs
+
+# read $1
 
 # 第一个输入参数为空
 if [ "$1" == "" ]; then
