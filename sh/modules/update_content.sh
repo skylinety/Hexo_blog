@@ -64,7 +64,7 @@ function replace_str() {
                 local post=''$public_url''$file_name''
                 echo $post
                 local publish_date="date: $(date -v-6d +%F%t%T)"
-                local top="top: 1000"
+                local top="top: "
                 # 截取目录前缀，eval将字符串中内容作为命令执行
                 local tag_source_str=$(eval 'echo $dir_name | cut -c'$(expr ${#dir} + 2)'-')
                 # local tag_source_str=$(eval 'echo $dir_name | cut -c'$( (expr ${#dir} + 2))'-')
