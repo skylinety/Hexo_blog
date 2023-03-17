@@ -12,7 +12,7 @@ base_dir="${sh_path%Hexo_blog/sh}"
 
 # 切换node版本，并丢弃错误输出
 n 10.24.1 2>/dev/null
-cd $sh_path/Hexo_blog
+cd $base_dir/Hexo_blog
 hexo clean
 hexo g
 if (hexo d); then

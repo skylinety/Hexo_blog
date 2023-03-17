@@ -139,7 +139,6 @@ title: '"${file_name%.*}"'\
 updated: '"$(date -v-6d +%F%t%T)"'\
 '"${publish_date}"'\
 '"${tags}"'\
-'"${top}"'\
 '"${categories}"'\
 ---\
             \

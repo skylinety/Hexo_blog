@@ -1,8 +1,9 @@
 ---
 title: Shell基础命令
-updated: 2023-02-04	15:45:55
+updated: 2023-03-11	14:52:34
 date: 2022-06-21	16:48:42
 tags: [Shell,语法]
+
 categories: [Major]
 ---
             
@@ -37,6 +38,8 @@ echo -e "Column 1\tColumn 2"
 根据要求展示输入的前置部分
 
 > output the first part of files
+
+展示前两行
 
 ```sh
 ls -lh | head -2
